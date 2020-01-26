@@ -1,0 +1,17 @@
+video{
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+form{
+    height: 250px;
+    width: 400px;
+    margin-top:20%;
+    padding: 10px;
+    z-index: 2;
+    background-color: white;
+    border: black solid 1px;
+}

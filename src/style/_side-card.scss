@@ -1,0 +1,63 @@
+aside{
+    // display: none !important;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    width: 294px;
+    padding-top: 10px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    color: #343434;
+    background: $aside-primary;
+    box-shadow: 0 0 25px rgba(0,0,0,.1);
+    border-right: 1px solid rgba(0,0,0,.1);
+        .adise_logo{
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        display: block;
+        text-align: center;
+            img{
+                max-width: 125px;
+                max-height: 125px;
+            }
+        }
+    .aside_card{
+        .card{
+            border-left: none;
+            border-right: none;
+            .card-header{
+                padding: 0;
+                background-color: $aside-primary;
+                button{
+                    color: black;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                }
+            }
+            .card-header-sum-price{
+                display: flex;
+                align-items: center;
+                padding: .375rem .75rem; 
+            }
+            .card-header-price{
+                margin-left: auto;
+                font-weight: 700;
+                text-align: right;
+            }   
+        }
+    }
+    .card-body{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h2, h3{
+            font-size: 16px;
+            margin: 0;
+        }
+    }
+}

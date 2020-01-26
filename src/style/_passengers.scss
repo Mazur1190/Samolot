@@ -1,0 +1,32 @@
+.airplanes{
+    
+    .airplane{
+        img{
+            position: relative;
+        }
+ 
+        svg{
+            position: absolute;
+            height: 100%;
+            width: auto;
+            rect{
+                cursor: pointer;
+                fill-opacity:0.34902
+            }
+        }
+        .status-available{
+            fill:#00ff14;
+            &:hover{
+                fill:#001aff;
+            }
+        }
+     
+        .status-reservation{
+            fill:#001aff;
+        }
+        .status-booked{
+            fill:#ff0000;
+            cursor: default;
+        }
+    }
+}

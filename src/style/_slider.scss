@@ -1,0 +1,33 @@
+a.control_prev,
+a.control_next {
+    position: absolute;
+    top: 10%;
+    z-index: 999;
+    display: block;
+    padding:3% 3%;
+    width: auto;
+    height: auto;
+    background: #2a2a2a;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+a.control_prev:hover,
+a.control_next:hover {
+    opacity: 1;
+    // -webkit-transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+a.control_prev {
+    border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+    right: 15px;
+    border-radius: 2px 0 0 2px;
+}

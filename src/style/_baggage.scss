@@ -1,0 +1,78 @@
+.baggage{
+        margin-top: 10%;
+    .baggage_box{
+        
+        .baggage_box-top,.baggage_box-middle,.baggage_box-bot{
+            background-color: white;
+            display: flex;
+            align-items: center;
+            width: 995px;
+            padding-left: 5%;
+            margin-bottom:0;
+        }
+        .baggage_box-top{
+            height: 100px;
+            display: flex;
+            background-color:$flight-primary;
+            h2{
+                text-transform: uppercase;
+            }
+        }
+        .baggage_box-middle{
+            height: 100px;
+            padding: 15px;
+            border-bottom: $flight-border;
+            
+            div{
+                align-items: center;
+            }
+            .form-control{
+                width: 60px;
+                height: 50px;
+                margin-left: 20px;
+            }
+            h2{
+                margin-left: 20px;
+                margin-bottom: 0;
+                
+                
+            }
+        
+        }
+        .baggage_box-bot{
+            height: 400px;
+            justify-content: space-around;
+            
+            .baggage_box-bot-options{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                box-shadow: 0 0 25px rgba(0,0,0,.2);
+                height: 200px;
+                width: 200px;
+                align-items: center;
+                cursor: pointer;
+                &:hover{
+                    transform: scale(1.05);
+                }
+                img{
+                    max-height: 100px;
+                    max-width: 100px;
+                    margin-bottom: 5px;
+                    
+                }
+                h4{
+                    font-weight: bold;
+                }
+                span{
+                    font-weight: bold;
+                }
+            }
+            .baggage_box-bot-button{
+                position: absolute;
+                bottom:20px;
+            }
+       
+        }
+    }
+}

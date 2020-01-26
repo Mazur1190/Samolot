@@ -1,0 +1,26 @@
+.btn{
+    padding: .5rem 2.4rem !important;
+    
+}
+
+.btn-primary{
+    // color: rgb(218, 52, 52);
+    background-color: $btn-secondary !important;
+    border-color: $btn-secondary !important;
+    text-transform:uppercase !important;
+    font-weight: bold !important;
+    
+    &:hover, &:active{
+        color: color-yiq($btn-primary) !important;
+        border-color: $btn-primary !important;
+        background-color: $btn-primary !important;
+      }
+    &:active{
+        border-color: $btn-secondary !important;
+    }
+    &:focus{
+        box-shadow: 0 0 0 0.2rem rgba(205, 202, 235, 0.5) !important;
+    }   
+}
+
+
