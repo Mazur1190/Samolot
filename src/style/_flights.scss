@@ -105,9 +105,14 @@
                 margin-left: 10%;
             }
         }
+        #flight-selector_ticketTo{
+            display: none !important;
+        }
+        #flight-selector_ticketFrom{
+            display: none !important;
+        }
         .flight-selector_ticket{
-            // display: none !important;
-            
+  
             background-color:$flight-tertiary;
             .flight-selector_ticket-class{
                 max-width: 300px;

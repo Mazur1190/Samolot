@@ -1,5 +1,8 @@
 import $ from 'jquery';
 
+
+import {buttonShowTo} from '../common/buttonShow';
+
 export const flightsTo = () => {
     const flightsView = $(`
     <div class="column">
@@ -73,10 +76,10 @@ export const flightsTo = () => {
                                      
                                           </div>
                                           <div class="flight-selector_bottom-btn">
-                                              <button class="btn btn-primary">Pokaż bilety</button>
+                                              <button id="btn_one" class="btn btn-primary">Pokaż bilety</button>
                                           </div>
                                       </div>
-                                      <div class="col-12 d-flex justify-content-center flight-selector_ticket" id="flight-selector_ticketTo">
+                                      <div class="col-12 d-flex justify-content-center flight-selector_ticket">
                                           <div class="flight-selector_ticket-class">
                                               <div class="flight-selector_ticket-class-header flight-selector_ticket-class-header-plus">
                                                   <h2>Plus</h2>

@@ -75,7 +75,7 @@ export const flightsFrom = () => {
                                               <button class="btn btn-primary">Pokaż bilety</button>
                                           </div>
                                       </div>
-                                      <div class="col-12 d-flex justify-content-center flight-selector_ticket">
+                                      <div class="col-12 d-flex justify-content-center flight-selector_ticket" id="flight-selector_ticketFrom">
                                           <div class="col-4 flight-selector_ticket-class">
                                               <div class="flight-selector_ticket-class-header flight-selector_ticket-class-header-plus">
                                                   <h2>Plus</h2>
