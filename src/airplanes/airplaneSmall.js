@@ -1,7 +1,16 @@
 import $ from 'jquery';
 import image from '../image/images/plane_small.jpg'
 
+
+
 export const airplaneSmall = () => {
+    fetch('../data_base/seats_small.json')
+        .then((res) => {
+            return res.json();
+        })
+        .then((element) => {
+            console.log(element)
+        })
     const airplane = $(`
     <div class="column">
     <div class="col-12 d-flex justify-content-center zero">
