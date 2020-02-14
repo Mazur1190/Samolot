@@ -42,7 +42,9 @@
         .baggage_box-bot{
             height: 400px;
             justify-content: space-around;
-            
+            .baggage_box-bot-optionsAccept{
+                transform: scale(1.05);
+            }
             .baggage_box-bot-options{
                 display: flex;
                 justify-content: center;

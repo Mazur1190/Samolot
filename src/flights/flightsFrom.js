@@ -1,4 +1,8 @@
 import $ from 'jquery';
+import image from '../image/images/icons/black-plane.svg'
+import imagex from '../image/images/icons/bottom-ticket/minus-symbol.svg'
+import imagey from '../image/images/icons/bottom-ticket/airliner.svg'
+import imagez from '../image/images/icons/bottom-ticket/right-arrow.svg'
 
 export const flightsFrom = () => {
     const flightsView = $(`
@@ -10,7 +14,7 @@ export const flightsFrom = () => {
                                   <div class="flight_cards">
                                       <div class="col-12 flight-selector_top">
                                           <div class="flight-selector_top-icon">
-                                              <img class="flight-selector_top-icon-from" src="./src/image/images/icons/black-plane.svg" alt="">
+                                              <img class="flight-selector_top-icon-from" src="${image}" alt="">
                                           </div>
                                           <div class="col-6 d-flex justify-content-center flight-selector_top-header">
                                               <h1>Berlin</h1>
@@ -63,9 +67,9 @@ export const flightsFrom = () => {
                                               <span>13:20</span>
                                           </div>
                                           <div class="flight-selector_bottom-icons">
-                                              <img class="flight-selector_bottom-icons-minus" src="./src/image/images/icons/bottom-ticket/minus-symbol.svg" alt="">
-                                              <img class="flight-selector_bottom-icons-airplane" src="./src/image/images/icons/bottom-ticket/airliner.svg" alt="">
-                                              <img class="flight-selector_bottom-icons-arrow" src="./src/image/images/icons/bottom-ticket/right-arrow.svg" alt="">
+                                              <img class="flight-selector_bottom-icons-minus" src="${imagex}" alt="">
+                                              <img class="flight-selector_bottom-icons-airplane" src="${imagey}" alt="">
+                                              <img class="flight-selector_bottom-icons-arrow" src="${imagez}" alt="">
                                           </div>
                                           <div class="flight-selector_bottom-time">
                                               <span>14:20</span>
@@ -76,11 +80,11 @@ export const flightsFrom = () => {
                                           </div>
                                       </div>
                                       <div class="col-12 d-none justify-content-center flight-selector_ticket" id="flight-selector_ticketFrom">
-                                          <div class="col-4 flight-selector_ticket-class">
+                                          <div class="flight-selector_ticket-classFrom" value="100">
                                               <div class="flight-selector_ticket-class-header flight-selector_ticket-class-header-plus">
                                                   <h2>Plus</h2>
                                               </div>
-                                              <div class="flight-selector_ticket-class-list">
+                                              <div class="flight-selector_ticket-class-list" 
                                                   <ul>
                                                       <li>Bezpłatny bagaż podręczny (40 x 30 x 20 cm) w kabinie, umieszczony pod fotelem</li>
                                                       <li>Podręczna walizka na kółkach (55 x 40 x 23 cm) w kabinie</li>
@@ -100,11 +104,11 @@ export const flightsFrom = () => {
                                                   <h2>100 $</h2>
                                               </div>
                                           </div>
-                                          <div class="flight-selector_ticket-class">
+                                          <div class="flight-selector_ticket-classFrom" value="50">
                                               <div class="flight-selector_ticket-class-header flight-selector_ticket-class-header-go">
                                                   <h2>Go</h2>
                                               </div>
-                                              <div class="flight-selector_ticket-class-list">
+                                              <div class="flight-selector_ticket-class-list" >
                                                   <ul>
                                                       <li>Bezpłatny bagaż podręczny (40 x 30 x 20 cm) w kabinie, umieszczony pod fotelem</li>
                                                       <li>Podręczna walizka na kółkach (55 x 40 x 23 cm) w kabinie</li>
@@ -121,7 +125,7 @@ export const flightsFrom = () => {
                                                   <h2>50 $</h2>
                                               </div>
                                           </div>
-                                              <div class="flight-selector_ticket-class">
+                                              <div class="flight-selector_ticket-classFrom" value="25">
                                                   <div class="flight-selector_ticket-class-header flight-selector_ticket-class-header-basic">
                                                       <h2>Basic</h2>
                                                   </div>

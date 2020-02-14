@@ -1,4 +1,9 @@
 import $ from 'jquery';
+import image from '../image/images/icons/black-plane.svg'
+import imagex from '../image/images/icons/bottom-ticket/minus-symbol.svg'
+import imagey from '../image/images/icons/bottom-ticket/airliner.svg'
+import imagez from '../image/images/icons/bottom-ticket/right-arrow.svg'
+import { directive } from 'lit-html';
 
 export const flightsTo = () => {
     const flightsView = $(`
@@ -11,7 +16,7 @@ export const flightsTo = () => {
                                    
                                       <div class="col-12 flight-selector_top">
                                           <div class="flight-selector_top-icon">
-                                              <img class="flight-selector_top-icon-to" src="./src/image/images/icons/black-plane.svg" alt="">
+                                              <img class="flight-selector_top-icon-to" src="${image}" alt="">
                                           </div>
                                           <div class="col-6 d-flex justify-content-center flight-selector_top-header">
                                               <h1>Wrocław</h1>
@@ -64,9 +69,9 @@ export const flightsTo = () => {
                                               <span>13:20</span>
                                           </div>
                                           <div class="flight-selector_bottom-icons">
-                                              <img class="flight-selector_bottom-icons-minus" src="./src/image/images/icons/bottom-ticket/minus-symbol.svg" alt="">
-                                              <img class="flight-selector_bottom-icons-airplane" src="./src/image/images/icons/bottom-ticket/airliner.svg" alt="">
-                                              <img class="flight-selector_bottom-icons-arrow" src="./src/image/images/icons/bottom-ticket/right-arrow.svg" alt="">
+                                              <img class="flight-selector_bottom-icons-minus" src="${imagex}" alt="">
+                                              <img class="flight-selector_bottom-icons-airplane" src="${imagey}" alt="">
+                                              <img class="flight-selector_bottom-icons-arrow" src="${imagez}" alt="">
                                           </div>
                                           <div class="flight-selector_bottom-time">
                                               <span>14:20</span>
@@ -76,8 +81,8 @@ export const flightsTo = () => {
                                               <button id="btn_one" class="btn btn-primary">Pokaż bilety</button>
                                           </div>
                                       </div>
-                                      <div class="col-12 d-none justify-content-center flight-selector_ticket " id="flight-selector_ticketTo">
-                                          <div class="flight-selector_ticket-class">
+                                      <div class="col-12 d-none justify-content-center flight-selector_ticket flight-selector_ticket-class-accept" id="flight-selector_ticketTo">
+                                          <div class="flight-selector_ticket-classTo" value="100">
                                               <div class="flight-selector_ticket-class-header flight-selector_ticket-class-header-plus">
                                                   <h2>Plus</h2>
                                               </div>
@@ -102,7 +107,7 @@ export const flightsTo = () => {
                                                   <h2>100 $</h2>
                                               </div>
                                           </div>
-                                          <div class="flight-selector_ticket-class">
+                                          <div class="flight-selector_ticket-classTo" value="50">
                                               <div class="flight-selector_ticket-class-header flight-selector_ticket-class-header-go">
                                                   <h2>Go</h2>
                                               </div>
@@ -120,11 +125,11 @@ export const flightsTo = () => {
                                                   </ul>
                                               </div>
                                               <div class="flight-selector_ticket-class-price flight-selector_ticket-class-header-go">
-                                                  <h2 data-value="50">50 $</h2>
+                                                  <h2>50 $</h2>
                                               </div>
                                           </div>
                                           
-                                          <div class="flight-selector_ticket-class">
+                                          <div class="flight-selector_ticket-classTo" value="25">
                                               <div class="flight-selector_ticket-class-header flight-selector_ticket-class-header-basic">
                                                   <h2>Basic</h2>
                                               </div>
@@ -151,3 +156,11 @@ export const flightsTo = () => {
     return flightsView;
 }
 
+
+
+
+
+// <div data-cos="elo"></div>
+
+
+// this.getAttribute("data-cos")  --->   elo

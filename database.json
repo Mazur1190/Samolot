@@ -1,85 +1,999 @@
 {
   "users": [],
-  "rooms": [
-    {
-      "id": 1,
-      "name": "Pokój unarny",
-      "beds": 1,
-      "guests": 1,
-      "price": 170
+
+  "airplaneSmall":
+      [
+        {
+            "id": "A1",
+            "status": true
+        },
+        {
+            "id": "A2",
+            "status": false
+        },
+        {
+            "id": "A3",
+            "status": true
+        },
+        {
+          "id": "A4",
+          "status": true
+      },
+      {
+          "id": "A5",
+          "status": false
+      },
+      {
+          "id": "A6",
+          "status": true
+      },
+      {
+        "id": "A7",
+        "status": true
+      },
+      {
+        "id": "A8",
+        "status": false
+      },
+      {
+        "id": "A9",
+        "status": true
+      },
+      {
+        "id": "A10",
+        "status": true
+      },
+      {
+          "id": "A11",
+          "status": false
+      },
+      {
+          "id": "A12",
+          "status": true
+      },
+      {
+          "id": "A13",
+          "status": true
+      },
+      {
+        "id": "C1",
+        "status": true
+      },
+      {
+          "id": "C2",
+          "status": false
+      },
+      {
+          "id": "C3",
+          "status": true
+      },
+      {
+        "id": "C4",
+        "status": true
+      },
+      {
+        "id": "C5",
+        "status": false
+      },
+      {
+        "id": "C6",
+        "status": true
+      },
+      {
+      "id": "C7",
+      "status": true
+      },
+      {
+      "id": "C8",
+      "status": false
+      },
+      {
+      "id": "C9",
+      "status": true
+      },
+      {
+      "id": "C10",
+      "status": true
+      },
+      {
+        "id": "C11",
+        "status": false
+      },
+      {
+        "id": "C12",
+        "status": true
+      },
+      {
+        "id": "C13",
+        "status": true
+      },
+      {
+        "id": "H1",
+        "status": true
+      },
+      {
+          "id": "H2",
+          "status": false
+      },
+      {
+          "id": "H3",
+          "status": true
+      },
+      {
+        "id": "H4",
+        "status": true
+      },
+      {
+        "id": "H5",
+        "status": false
+      },
+      {
+        "id": "H6",
+        "status": true
+      },
+      {
+      "id": "H7",
+      "status": true
+      },
+      {
+      "id": "H8",
+      "status": false
+      },
+      {
+      "id": "H9",
+      "status": true
+      },
+      {
+      "id": "H10",
+      "status": true
+      },
+      {
+        "id": "H11",
+        "status": false
+      },
+      {
+        "id": "H12",
+        "status": true
+      },
+      {
+        "id": "H13",
+        "status": true
+      },
+      {
+        "id": "K1",
+        "status": true
+      },
+      {
+          "id": "K2",
+          "status": false
+      },
+      {
+          "id": "K3",
+          "status": true
+      },
+      {
+        "id": "K4",
+        "status": true
+      },
+      {
+        "id": "K5",
+        "status": false
+      },
+      {
+        "id": "K6",
+        "status": true
+      },
+      {
+      "id": "K7",
+      "status": true
+      },
+      {
+      "id": "K8",
+      "status": false
+      },
+      {
+      "id": "K9",
+      "status": true
+      },
+      {
+      "id": "K10",
+      "status": true
+      },
+      {
+        "id": "K11",
+        "status": false
+      },
+      {
+        "id": "K12",
+        "status": true
+      },
+      {
+        "id": "K13",
+        "status": true
+      }
+    ],
+
+    "airplaneLarge":
+    [
+      {
+        "id": "A1",
+        "status": true 
     },
     {
-      "id": 2,
-      "name": "Pokój binarny",
-      "beds": 1,
-      "guests": 2,
-      "price": 240
+        "id": "A2",
+        "status": true 
+        
     },
     {
-      "id": 3,
-      "name": "Pokój trójkowy",
-      "beds": 2,
-      "guests": 3,
-      "price": 290
+        "id": "A3",
+        "status": true 
     },
     {
-      "id": 4,
-      "name": "Pokój czwórkowy",
-      "beds": 2,
-      "guests": 4,
-      "price": 340
-    }
-  ],
-  "treatments": [
-    {
-      "id": 1,
-      "name": "Masaż rozgrzanym monitorem",
-      "area": "back",
-      "time": 30,
-      "price": 80
+      "id": "A4",
+      "status": true 
     },
     {
-      "id": 2,
-      "name": "Biczowanie kablem od myszy",
-      "area": "back",
-      "time": 20,
-      "price": 70
+      "id": "A5",
+      "status": true 
+      
     },
     {
-      "id": 3,
-      "name": "Peeling odłamkami płyty CD",
-      "area": "face",
-      "time": 15,
-      "price": 50
+      "id": "A6",
+      "status": true 
     },
     {
-      "id": 4,
-      "name": "Pedicure woskiem z USB",
-      "area": "legs",
-      "time": 25,
-      "price": 100
+    "id": "A7",
+    "status": true 
     },
     {
-      "id": 5,
-      "name": "Manicure analogowo-cyfrowy",
-      "area": "hands",
-      "time": 45,
-      "price": 150
+    "id": "A8",
+    "status": true 
+    
     },
     {
-      "id": 6,
-      "name": "Kąpiel w gorącej kawie",
-      "area": "body",
-      "time": 60,
-      "price": 200
+    "id": "A9",
+    "status": true 
     },
     {
-      "id": 7,
-      "name": "Depilacja dyskiem twardym",
-      "area": "body",
-      "time": 45,
-      "price": 120
-    }
-  ]
+    "id": "A10",
+    "status": true 
+    },
+    {
+      "id": "A11",
+      "status": true 
+      
+    },
+    {
+      "id": "A12",
+      "status": true 
+    },
+    {
+      "id": "A13",
+      "status": true 
+    },
+    {
+    "id": "A14",
+    "status": true 
+    },
+    {
+      "id": "A15",
+      "status": true 
+      
+    },
+    {
+      "id": "A16",
+      "status": true 
+    },
+    {
+    "id": "A17",
+    "status": true 
+    },
+    {
+    "id": "A18",
+    "status": true 
+    
+    },
+    {
+    "id": "A19",
+    "status": true 
+    },
+    {
+    "id": "A20",
+    "status": true 
+    },
+    {
+    "id": "A21",
+    "status": true 
+    
+    },
+    {
+    "id": "A22",
+    "status": true 
+    },
+    {
+    "id": "A23",
+    "status": true 
+    },
+    {
+    "id": "A24",
+    "status": true 
+    
+    },
+    {
+    "id": "A25",
+    "status": true 
+    },
+    {
+    "id": "A26",
+    "status": true 
+    },
+    {
+    "id": "A27",
+    "status": true 
+    },
+    {
+      "id": "A28",
+      "status": true 
+      
+    },
+    {
+      "id": "A29",
+      "status": true 
+    },
+    {
+    "id": "A30",
+    "status": true 
+    },
+    {
+      "id": "B1",
+      "status": true 
+  },
+  {
+      "id": "B2",
+      "status": true 
+      
+  },
+  {
+      "id": "B3",
+      "status": true 
+  },
+  {
+    "id": "B4",
+    "status": true 
+  },
+  {
+    "id": "B5",
+    "status": true 
+    
+  },
+  {
+    "id": "B6",
+    "status": true 
+  },
+  {
+  "id": "B7",
+  "status": true 
+  },
+  {
+  "id": "B8",
+  "status": true 
+  
+  },
+  {
+  "id": "B9",
+  "status": true 
+  },
+  {
+  "id": "B10",
+  "status": true 
+  },
+  {
+    "id": "B11",
+    "status": true 
+    
+  },
+  {
+    "id": "B12",
+    "status": true 
+  },
+  {
+    "id": "B13",
+    "status": true 
+  },
+  {
+  "id": "B14",
+  "status": true 
+  },
+  {
+    "id": "B15",
+    "status": true 
+    
+  },
+  {
+    "id": "B16",
+    "status": true 
+  },
+  {
+  "id": "B17",
+  "status": true 
+  },
+  {
+  "id": "B18",
+  "status": true 
+  
+  },
+  {
+  "id": "B19",
+  "status": true 
+  },
+  {
+  "id": "B20",
+  "status": true 
+  },
+  {
+  "id": "B21",
+  "status": true 
+  
+  },
+  {
+  "id": "B22",
+  "status": true 
+  },
+  {
+  "id": "B23",
+  "status": true 
+  },
+  {
+  "id": "B24",
+  "status": true 
+  
+  },
+  {
+  "id": "B25",
+  "status": true 
+  },
+  {
+  "id": "B26",
+  "status": true 
+  },
+  {
+  "id": "B27",
+  "status": true 
+  },
+  {
+    "id": "B28",
+    "status": true 
+    
+  },
+  {
+    "id": "B29",
+    "status": true 
+  },
+  {
+  "id": "B30",
+  "status": true 
+  },
+  {
+    "id": "C1",
+    "status": true 
+  },
+  {
+      "id": "C2",
+      "status": true 
+      
+  },
+  {
+      "id": "C3",
+      "status": true 
+  },
+  {
+    "id": "C4",
+    "status": true 
+  },
+  {
+    "id": "C5",
+    "status": true 
+    
+  },
+  {
+    "id": "C6",
+    "status": true 
+  },
+  {
+  "id": "C7",
+  "status": true 
+  },
+  {
+  "id": "C8",
+  "status": true 
+
+  },
+  {
+  "id": "C9",
+  "status": true 
+  },
+  {
+  "id": "C10",
+  "status": true 
+  },
+  {
+    "id": "C11",
+    "status": true 
+    
+  },
+  {
+    "id": "C12",
+    "status": true 
+  },
+  {
+    "id": "C13",
+    "status": true 
+  },
+  {
+  "id": "C14",
+  "status": true 
+  },
+  {
+    "id": "C15",
+    "status": true 
+    
+  },
+  {
+    "id": "C16",
+    "status": true 
+  },
+  {
+  "id": "C17",
+  "status": true 
+  },
+  {
+  "id": "C18",
+  "status": true 
+
+  },
+  {
+  "id": "C19",
+  "status": true 
+  },
+  {
+  "id": "C20",
+  "status": true 
+  },
+  {
+  "id": "C21",
+  "status": true 
+
+  },
+  {
+  "id": "C22",
+  "status": true 
+  },
+  {
+  "id": "C23",
+  "status": true 
+  },
+  {
+  "id": "C24",
+  "status": true 
+
+  },
+  {
+  "id": "C25",
+  "status": true 
+  },
+  {
+  "id": "C26",
+  "status": true 
+  },
+  {
+  "id": "C27",
+  "status": true 
+  },
+  {
+    "id": "C28",
+    "status": true 
+    
+  },
+  {
+    "id": "C29",
+    "status": true 
+  },
+  {
+  "id": "C30",
+  "status": true 
+  },
+  {
+    "id": "D1",
+    "status": true 
+  },
+  {
+      "id": "D2",
+      "status": true 
+      
+  },
+  {
+      "id": "D3",
+      "status": true 
+  },
+  {
+    "id": "D4",
+    "status": true 
+  },
+  {
+    "id": "D5",
+    "status": true 
+    
+  },
+  {
+    "id": "D6",
+    "status": true 
+  },
+  {
+  "id": "D7",
+  "status": true 
+  },
+  {
+  "id": "D8",
+  "status": true 
+
+  },
+  {
+  "id": "D9",
+  "status": true 
+  },
+  {
+  "id": "D10",
+  "status": true 
+  },
+  {
+    "id": "D11",
+    "status": true 
+    
+  },
+  {
+    "id": "D12",
+    "status": true 
+  },
+  {
+    "id": "D13",
+    "status": true 
+  },
+  {
+  "id": "D14",
+  "status": true 
+  },
+  {
+    "id": "D15",
+    "status": true 
+    
+  },
+  {
+    "id": "D16",
+    "status": true 
+  },
+  {
+  "id": "D17",
+  "status": true 
+  },
+  {
+  "id": "D18",
+  "status": true 
+
+  },
+  {
+  "id": "D19",
+  "status": true 
+  },
+  {
+  "id": "D20",
+  "status": true 
+  },
+  {
+  "id": "D21",
+  "status": true 
+
+  },
+  {
+  "id": "D22",
+  "status": true 
+  },
+  {
+  "id": "D23",
+  "status": true 
+  },
+  {
+  "id": "D24",
+  "status": true 
+
+  },
+  {
+  "id": "D25",
+  "status": true 
+  },
+  {
+  "id": "D26",
+  "status": true 
+  },
+  {
+  "id": "D27",
+  "status": true 
+  },
+  {
+    "id": "D28",
+    "status": true 
+    
+  },
+  {
+    "id": "D29",
+    "status": true 
+  },
+  {
+  "id": "D30",
+  "status": true 
+  },
+  {
+    "id": "E1",
+    "status": false
+  },
+  {
+      "id": "E2",
+      "status": true 
+      
+  },
+  {
+      "id": "E3",
+      "status": true 
+  },
+  {
+    "id": "E4",
+    "status": false 
+  },
+  {
+    "id": "E5",
+    "status": true 
+    
+  },
+  {
+    "id": "E6",
+    "status": true 
+  },
+  {
+  "id": "E7",
+  "status": true 
+  },
+  {
+  "id": "E8",
+  "status": true 
+
+  },
+  {
+  "id": "E9",
+  "status": true 
+  },
+  {
+  "id": "E10",
+  "status": true 
+  },
+  {
+    "id": "E11",
+    "status": true 
+    
+  },
+  {
+    "id": "E12",
+    "status": true 
+  },
+  {
+    "id": "E13",
+    "status": true 
+  },
+  {
+  "id": "E14",
+  "status": true 
+  },
+  {
+    "id": "E15",
+    "status": true 
+    
+  },
+  {
+    "id": "E16",
+    "status": true 
+  },
+  {
+  "id": "E17",
+  "status": true 
+  },
+  {
+  "id": "E18",
+  "status": true 
+
+  },
+  {
+  "id": "E19",
+  "status": true 
+  },
+  {
+  "id": "E20",
+  "status": true 
+  },
+  {
+  "id": "E21",
+  "status": true 
+
+  },
+  {
+  "id": "E22",
+  "status": true 
+  },
+  {
+  "id": "E23",
+  "status": true 
+  },
+  {
+  "id": "E24",
+  "status": true 
+
+  },
+  {
+  "id": "E25",
+  "status": true 
+  },
+  {
+  "id": "E26",
+  "status": true 
+  },
+  {
+  "id": "E27",
+  "status": true 
+  },
+  {
+    "id": "E28",
+    "status": true 
+    
+  },
+  {
+    "id": "E29",
+    "status": true 
+  },
+  {
+  "id": "E30",
+  "status": true 
+  },
+  {
+    "id": "F1",
+    "status": true 
+  },
+  {
+    "id": "F2",
+    "status": true 
+    
+  },
+  {
+    "id": "F3",
+    "status": true 
+  },
+  {
+  "id": "F4",
+  "status": true 
+  },
+  {
+  "id": "F5",
+  "status": true 
+
+  },
+  {
+  "id": "F6",
+  "status": true 
+  },
+  {
+  "id": "F7",
+  "status": true 
+  },
+  {
+  "id": "F8",
+  "status": true 
+
+  },
+  {
+  "id": "F9",
+  "status": true 
+  },
+  {
+  "id": "F10",
+  "status": true 
+  },
+  {
+  "id": "F11",
+  "status": true 
+
+  },
+  {
+  "id": "F12",
+  "status": true 
+  },
+  {
+  "id": "F13",
+  "status": true 
+  },
+  {
+  "id": "F14",
+  "status": true 
+  },
+  {
+  "id": "F15",
+  "status": true 
+
+  },
+  {
+  "id": "F16",
+  "status": true 
+  },
+  {
+  "id": "F17",
+  "status": true 
+  },
+  {
+  "id": "F18",
+  "status": true 
+
+  },
+  {
+  "id": "F19",
+  "status": true 
+  },
+  {
+  "id": "F20",
+  "status": true 
+  },
+  {
+  "id": "F21",
+  "status": true 
+
+  },
+  {
+  "id": "F22",
+  "status": true 
+  },
+  {
+  "id": "F23",
+  "status": true 
+  },
+  {
+  "id": "F24",
+  "status": true 
+
+  },
+  {
+  "id": "F25",
+  "status": true 
+  },
+  {
+  "id": "F26",
+  "status": true 
+  },
+  {
+  "id": "F27",
+  "status": true 
+  },
+  {
+  "id": "F28",
+  "status": true 
+
+  },
+  {
+  "id": "F29",
+  "status": true 
+  },
+  {
+  "id": "F30",
+  "status": true 
+  }
+
+    ]
+
+    
+  
+  
 }
  

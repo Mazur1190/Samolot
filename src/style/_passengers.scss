@@ -21,12 +21,14 @@
             }
         }
      
-        .status-reservation{
-            fill:#001aff;
+        .status-reserved{
+            fill:#ffee00;
+            // fill:#001aff;
+            
         }
         .status-booked{
-            // fill:#ff0000;
-            // cursor: default;
+            fill:#ff0000;
+            cursor: default;
         }
     }
 }

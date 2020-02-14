@@ -8,13 +8,14 @@ export const buttonShow = () => {
  
 
         buttonOne.addEventListener('click', () =>{
-            flightTo.classList.toggle("d-none");
+            flightTo.classList.remove("d-none");
             // buttonOne.textContent = "Ukryj"; // you need if to get "toggle effetc"
             // console.dir(flightTo)
+            // flightTo.classList.toggle("d-none");
             
         })
         buttonTwo.addEventListener('click', () =>{
-            flightFrom.classList.toggle("d-none");
+            flightFrom.classList.remove("d-none");
         })
     
   

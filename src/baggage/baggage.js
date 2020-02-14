@@ -24,6 +24,7 @@ export const baggage = () => {
                         <div class="col-4 d-flex">
                             <h2>Ilość osób:</h2>
                             <select class="form-control" name="number-of-passangers" id="adults_baggage_box">
+                                <option >0</option>
                                 <option >1</option>
                                 <option >2</option>
                                 <option >3</option>
@@ -72,24 +73,24 @@ export const baggage = () => {
         </div>
         <div class="d-flex justify-content-center baggage_box">
             <div class="row">
-                <div class="col-12 d-fex  baggage_box-bot">
-                    <div class="col-3 baggage_box-bot-options" id="suitcase_small">
+                <div class="col-12 d-fex  baggage_box-bot" >
+                    <div class="col-3 baggage_box-bot-options" id="suitcase_small" value="10">
                         <img src="${suitcase_small}" alt="">
                         <h4>10 kg</h4>
                         <span>10 $</span>
                     </div>
-                    <div class="col-3  baggage_box-bot-options" id="suitcase_medium"> 
+                    <div class="col-3  baggage_box-bot-options" id="suitcase_medium" value="20"> 
                         <img src="${suitcase_medium}" alt="">
                         <h4>20 kg</h4>
                         <span>20 $</span>
                     </div>
-                    <div class=" col-3 baggage_box-bot-options" id="suitcase_large">
+                    <div class=" col-3 baggage_box-bot-options" id="suitcase_large" value="30">
                         <img src="${suitcase_large}" alt="">
                         <h4>32 kg</h4>
                         <span>30 $</span>
                     </div>
                     <div class=" baggage_box-bot-button">
-                        <button class="btn btn-primary">Akceptuj</button>
+                        <button class="btn btn-primary" id="sum">Akceptuj</button>
                     </div>
                    
                 </div>

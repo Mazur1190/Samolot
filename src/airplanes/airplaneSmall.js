@@ -4,13 +4,7 @@ import image from '../image/images/plane_small.jpg'
 
 
 export const airplaneSmall = () => {
-    fetch('../data_base/seats_small.json')
-        .then((res) => {
-            return res.json();
-        })
-        .then((element) => {
-            console.log(element)
-        })
+ 
     const airplane = $(`
     <div class="column">
     <div class="col-12 d-flex justify-content-center zero">
@@ -18,11 +12,10 @@ export const airplaneSmall = () => {
             <div class="col-12 d-flex justify-content-center airplane">
                 <img src="${image}" class="aurplane_small" alt="">
                 <svg>
-                    
-                    <rect class="airplane_small-seat status-booked" id="A1" x="68.865" y="314.11" width="30.156" height="31.86" />
+                    <rect class="airplane_small-seat status-available" id="A1" x="68.865" y="314.11" width="30.156" height="31.86" />
                     <rect class="airplane_small-seat status-available" id="C1" x="100.865" y="314.11" width="30.156" height="31.86" />
                     <rect class="airplane_small-seat status-available" id="A2" x="68.865" y="362.11" width="30.156" height="31.86" />
-                    <rect class="airplane_small-seat status-booked" id="C2" x="100.865" y="362.11" width="30.156" height="31.86" />
+                    <rect class="airplane_small-seat status-available" id="C2" x="100.865" y="362.11" width="30.156" height="31.86" />
                     <rect class="airplane_small-seat status-available" id="A3" x="68.865" y="411.11" width="30.156" height="31.86" />
                     <rect class="airplane_small-seat status-available" id="C3" x="100.865" y="411.11" width="30.156" height="31.86" />
                     <rect class="airplane_small-seat status-available" id="A4" x="68.865" y="459.11" width="30.156" height="31.86" />
@@ -76,6 +69,23 @@ export const airplaneSmall = () => {
         </div>
         `);
     
-  
+        fetch('http://localhost:3000/airplaneSmall') // Pobiera baze danych tylko Array zwiazany z "seats"
+        .then((res) => {
+            return res.json();   // to co pobralem przerabia na jsona (jest to konieczne w kazdym przypadku inaczej JS tego nie przeczyta!)
+        })
+        .then((elements) => {  // Pobiera wszystkie elementy "seats" - elements jest nazwa parametru
+            elements.forEach(el => {   // wrzucamy parametr (elements), a nastepnie do wszystkich tych elementow iterujemy kazdy element "el" (tez jest to nazwa parametru)
+                if(el.status === false){    // sprawdzamy status kazdego elementu (status jest wewnatrz jsona! status odwoluje sie do statusu w jsonie!)
+                    // console.log(document.getElementById(el.id)) // sprawdzenie czy jest taki element
+                  document.getElementById(el.id).classList.add("status-booked") // pobieramy element ktory zostal utworzony na stronie i przypisujemy do niego klase
+                  document.getElementById(el.id).classList.remove("status-available")
+                }
+            });
+          });
     return airplane ;
   };
+
+
+// function (elements) {}
+
+// const nazwa = document.querySelectorAll('.classa1.class2')

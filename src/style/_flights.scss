@@ -1,13 +1,16 @@
 
 .flight{
-    
+ 
     .flight_cards{
         width: 996px;
         box-shadow: 0 0 25px rgba(0,0,0,.5);
     }
+    .flight-selector-from{
+        margin-bottom: 50px;
+    }
     .flight-selector-to, .flight-selector-from{
         padding:20px 35px;
-        margin-top: 10%;
+        margin-top: 5%;
         align-items: center;
         
         .flight-selector_top{
@@ -107,25 +110,37 @@
         }
         #flight-selector_ticketTo{
             display: flex;
+       
         }
         #flight-selector_ticketFrom{
             display: flex;
         }
         .flight-selector_ticket{
-  
+            
             background-color:$flight-tertiary;
-            .flight-selector_ticket-class{
+            .flight-selector_ticket-class-acceptTo{
+                transform: scale(1.05) !important;
+            }
+            .flight-selector_ticket-class-acceptFrom{
+                transform: scale(1.05) !important;
+            }
+            .flight-selector_ticket-classTo,
+            .flight-selector_ticket-classFrom{
                 max-width: 300px;
                 margin:30px 10px 30px 10px;
                 display: flex;
                 flex-direction: column;
                 padding:0;
                 box-shadow: 0 0 25px rgba(0,0,0,.2);
+                transform: scale(1);
                 cursor: pointer;
+                
              
-                &:hover{
+                
+                &:hover {
                     transform: scale(1.05);
-                }
+                }     
+              
                 .flight-selector_ticket-class-header{
                     display: flex;
                     justify-content: center;
@@ -133,6 +148,7 @@
                     color:white;
                     margin-bottom: 10px;
                 }
+                
                 .flight-selector_ticket-class-header-plus{
                     background:rgb(250, 106, 10);
                 }

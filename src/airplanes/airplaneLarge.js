@@ -192,7 +192,19 @@ export const airplaneLarge = () => {
     </div>
 </div>
         `);
-    
+        fetch('http://localhost:3000/airplaneLarge') // Pobiera baze danych tylko Array zwiazany z "seats"
+        .then((res) => {
+            return res.json();   // to co pobralem przerabia na jsona (jest to konieczne w kazdym przypadku inaczej JS tego nie przeczyta!)
+        })
+        .then((elements) => {  // Pobiera wszystkie elementy "seats" - elements jest nazwa parametru
+            elements.forEach(el => {   // wrzucamy parametr (elements), a nastepnie do wszystkich tych elementow iterujemy kazdy element "el" (tez jest to nazwa parametru)
+                if(el.status === false){    // sprawdzamy status kazdego elementu (status jest wewnatrz jsona! status odwoluje sie do statusu w jsonie!)
+                    // console.log(document.getElementById(el.id)) // sprawdzenie czy jest taki element
+                  document.getElementById(el.id).classList.add("status-booked") // pobieramy element ktory zostal utworzony na stronie i przypisujemy do niego klase
+                  document.getElementById(el.id).classList.remove("status-available")
+                }
+            });
+          });
   
     return airplane ;
   };
