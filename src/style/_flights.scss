@@ -35,11 +35,13 @@
             }
         }
         .flight-selector_middle{
+
+            display: flex;
+             justify-content: space-around;
+             align-items: center;
             height: 112px;
             background-color: $flight-secondary;
             border-bottom: 1px solid rgba(0,0,0,.3);
-            display: flex;
-            align-items: center;
             
             .flight-selector_middle-content{
                 width: auto;

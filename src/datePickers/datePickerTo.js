@@ -1,20 +1,20 @@
 import $ from 'jquery';
 
-export const datePicker = () => {
+export const datePickerTo = () => {
     
-    const date_picker_element = document.querySelector('.date-picker');
-    const selected_date_element = document.querySelector('.date-picker .selected-date');
-    const dates_element = document.querySelector('.date-picker .dates')
+    window.dateTo = 0;
+    const date_picker_element = document.getElementById('date-pickerTo');
+    const selected_date_element = document.getElementById('selected-dateTo');
+    const dates_element = document.getElementById('datesTo')
     
-    const mth_element = document.querySelector('.date-picker .dates .month .mth')
-    const next_mth_element = document.querySelector('.date-picker .dates .month .next-mth')
-    const prev_mth_element = document.querySelector('.date-picker .dates .month .prev-mth')
+    const mth_element = document.getElementById('mthTo')
+    const next_mth_element = document.getElementById('next-mthTo')
+    const prev_mth_element = document.getElementById('prev-mthTo')
     
-    const days_element = document.querySelector('.date-picker .dates .days')
+    const days_element = document.getElementById('daysTo')
     
     const months = ['Styczeń', 'Luty','Marzec', 'Kwiecień', 'Maj', 'Czerwiec', 'Lipiec', 'Sierpień', 'Wrzesień', 'Październik', 'Listopad', 'Grudzień'];
     
-    console.log(selected_date_element)
     
     // Date pickers
     let date = new Date();
@@ -61,7 +61,7 @@ export const datePicker = () => {
     date_picker_element.addEventListener('click', toggleDatePicker );
     function toggleDatePicker (e) {
         // console.log(e.path)
-        if(!checkEventPatchForClass(e.path, 'dates')){
+        if(!checkEventPathForClass(e.path, 'dates')){
     
             dates_element.classList.toggle('active');
         }
@@ -69,7 +69,7 @@ export const datePicker = () => {
     
     
     // HELPER for 1
-    function checkEventPatchForClass (path, selector) {
+    function checkEventPathForClass (path, selector) {
         for (let i=0; i<path.length; i++) {
             if (path[i].classList && path[i].classList.contains(selector)){
                 return true
@@ -147,6 +147,15 @@ export const datePicker = () => {
     // End ==== 3 ====
     // ^^^^^^^^^^^^^^^
 
+
+    // =================
+    // Start ==== 4 ==== Uzyskanie wartosci daty
+    // =================
+    selected_date_element.addEventListener('click', ()=>{
+        window.dateTo = selected_date_element.textContent;
+    })
+  // End ==== 4 ====
+    // ^^^^^^^^^^^^^^^
     
   
 }

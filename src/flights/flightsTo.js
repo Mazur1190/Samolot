@@ -25,44 +25,19 @@ export const flightsTo = () => {
                                           </div>
                                       </div>
                                       <div class="col-12 flight-selector_middle">
-                                          <a href="#" onclick="plusDivs(+1)" class="control_next">>></a>
-                                          <a href="#" onclick="plusDivs(-1)" class="control_prev"><<</a>
-                                          <div class="flight-selector_middle-content">
-                                              <div class="flight-selector_middle-list">
-                                                  <ul>
-                                                      <li>
-                                                          <span>Pon, 1 MAR</span>
-                                                      </li>
-                                                      <li>
-                                                          <span>WT, 1 MAR</span>
-                                                      </li>
-                                                      <li>
-                                                          <span>ŚRd, 1 MAR</span>
-                                                      </li>
-                                                      <li>
-                                                          <span>czw, 1 MAR</span>
-                                                      </li>
-                                                      <li>
-                                                          <span>pt, 1 MAR</span>
-                                                      </li>
-                                                      <li>
-                                                          <span>sob, 1 MAR</span>
-                                                      </li>
-                                                      <li>
-                                                          <span>ndz, 1 MAR</span>
-                                                      </li>
-                                                      <li>
-                                                          <span>Pon, 1 MAR</span>
-                                                      </li>
-                                                      <li>
-                                                          <span>wt, 1 MAR</span>
-                                                      </li>
-                                                      <li>
-                                                          <span>śrd, 1 MAR</span>
-                                                      </li>
-                                                  </ul>
-                                              </div>
-                                          </div>
+                                            <div><h2>Proszę wybrać datę wylotu</h2></div>
+                                            <div class="date-picker" id="date-pickerTo">
+                                                <div class="selected-date" id="selected-dateTo"></div>
+                                                <div class="dates" id="datesTo">
+                                                    <div class="month" id="monthTo">
+                                                        <div class="arrows prev-mth" id="prev-mthTo">&lt;</div>
+                                                        <div class="mth" id="mthTo"></div>
+                                                        <div class="arrows next-mth" id="next-mthTo">&gt;</div>
+                                                    </div>
+                                                    <div class="days" id="daysTo">
+                                                    </div>
+                                                </div>
+                                            </div>                              
                                       </div>
                                       <div class="col-12 flight-selector_bottom">
                                           <div class="flight-selector_bottom-time">

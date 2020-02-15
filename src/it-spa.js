@@ -19,7 +19,8 @@ import { flightsFrom } from './flights/flightsFrom';
  import {seatSelector} from './common/seatSelector'
 
  import {datePickerView } from './dateAndDistanceView/datePicker'
- import {datePicker } from './dateAndDistanceBrain/datePickerBrain'
+ import {datePickerTo } from './datePickers/datePickerTo'
+ import {datePickerFrom } from './datePickers/datePickerFrom'
 // Trzeba zrobic w HTML diva ktory bedzie oprozniany i podmieniany na kolejne zakladki
 
 
@@ -34,11 +35,14 @@ router.mount(main);
 
 // Trzeba ulozyc logike do przepuszca do poszczegolnych paneli
 
-div.append(datePickerView);
-datePicker();
+// div.append(datePickerView);
+
+
 // main.before(asideBar);
-// div.append(flightsTo);
-// div.append(flightsFrom);
+div.append(flightsTo);
+div.append(flightsFrom);
+datePickerTo();
+datePickerFrom();
 // buttonShow();
 
 // div.append(baggage);
