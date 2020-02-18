@@ -53,13 +53,13 @@ export const summaryAll = () => {
                             <h2>Pasażerowie:</h2>
                         </div>
                         <div class="col-4 d-flex">
-                            <h2>4</h2>
+                            <h2 id="passengers">4</h2>
                         </div>
                         <div class="col-4 d-flex">
                             <h2>Bagaż:</h2>
                         </div>
                         <div class="col-4 d-flex">
-                            <h2>32 kg</h2>
+                            <h2 id="baggage">32 kg</h2>
                         </div>
                     </div>
                 </div>
@@ -73,7 +73,7 @@ export const summaryAll = () => {
                         <div class="col-4 d-flex">
                             <h2>Miejsca:</h2>
                         </div>
-                        <div class="col-4 d-flex">
+                        <div class="col-4 d-flex" id="seats">
                             <span>A30</span>
                             <span>A30</span>
                             <span>A30</span>
@@ -98,7 +98,7 @@ export const summaryAll = () => {
                             <h2>Suma zamówienia:</h2>
                         </div>
                         <div class="col-6 d-flex">
-                            <h2>1000$</h2>
+                            <h2 id="summary">1000$</h2>
                         </div>
               
                     </div>

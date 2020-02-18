@@ -13,6 +13,7 @@ import { flightsFrom } from './flights/flightsFrom';
  import { airplaneLarge } from './airplanes/airplaneLarge'
 
  import {  summaryAll } from './summary/summary'
+ import {sum} from './summary/sum/sum'
 // JS aplications
  import {buttonShow} from './common/buttonShow'
  import {buttonSelector} from './common/buttonSelector'
@@ -43,17 +44,18 @@ div.append(flightsTo);
 div.append(flightsFrom);
 datePickerTo();
 datePickerFrom();
-// buttonShow();
+buttonShow();
 
 // div.append(baggage);
-// buttonSelector();
+buttonSelector();
 
 // div.append(airplaneSmall);
 // seatSelector();
 
 
 // buttonSelector();
-
+// div.append(summaryAll)
+// sum();
 // const checker = document.getElementById("sum");
 // console.log(checker )
 // sum.addEventListener("click", () => {
