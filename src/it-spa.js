@@ -35,7 +35,7 @@ const div = $('div');
 
 
 //Wgrywanie stron
-main.before(asideBar);
+// main.before(asideBar);
 div.append(flightsTo);
 div.append(flightsFrom);
 

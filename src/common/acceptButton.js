@@ -5,6 +5,7 @@ export const accept = () => {
     const btn_four = document.getElementById('btn_four')
     const btn_five = document.getElementById('btn_five')
     const btn_six = document.getElementById('btn_six')
+    const btn_seven = document.getElementById('btn-seven')
     //Views
     const flightTo = document.getElementById('flight_to')
     const flightFrom = document.getElementById('flight_from')
@@ -32,8 +33,8 @@ export const accept = () => {
         }
         */
     })
+
     btn_five.addEventListener('click', ()=>{
-        console.log(summary)
         airplaneSmall.style.display="none"
         btnFive.style.display="none"
         summary.style.display="flex"
@@ -42,5 +43,11 @@ export const accept = () => {
     // btn_six.addEventListener('click', ()=>{
 
     // })
+
+    btn_seven.addEventListener('click', ()=>{
+        summary.style.display="none"
+        alert("Dziękujemy za zakup podrózy, życzymy udanego wypoczynku")
+    })
+
 
 }

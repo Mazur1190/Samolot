@@ -126,7 +126,7 @@ export const summaryAll = () => {
             <div class="row">
                 <div class="col-12 summary_box-five d-flex justify-content-center">
                         <div class=" baggage_box-bot-button">
-                            <button class="btn btn-primary" id="buy">Kupuję</button>
+                            <button class="btn btn-primary" id="btn-seven">Kupuję</button>
                         </div>
                     </div>
                 </div>
