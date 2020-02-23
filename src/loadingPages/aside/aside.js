@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import image from '../image/images/logo/e76427fc-9a66-4e2c-8d8b-3fa9498b9161_200x200.png'
+import image from '../../image/images/logo/e76427fc-9a66-4e2c-8d8b-3fa9498b9161_200x200.png'
 
 export const asideBar = () => {
     const aside = $(`

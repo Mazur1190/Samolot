@@ -147,12 +147,16 @@ export const datePickerTo = () => {
     // End ==== 3 ====
     // ^^^^^^^^^^^^^^^
 
-
+    // selected_date_element.addEventListener('click', ()=>{
+    //     console.log(window.dateTo)
+    //     document.getElementById('dateStartTo').innerHTML = window.dateTo;
+    // })
     // =================
     // Start ==== 4 ==== Uzyskanie wartosci daty
     // =================
     selected_date_element.addEventListener('click', ()=>{
         window.dateTo = selected_date_element.textContent;
+        document.getElementById('dateTo').innerHTML = window.dateTo;
     })
   // End ==== 4 ====
     // ^^^^^^^^^^^^^^^

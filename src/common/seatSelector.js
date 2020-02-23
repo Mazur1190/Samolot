@@ -33,8 +33,12 @@ export const seatSelector = () => {
                 currentId.push(e.getAttribute("id")) 
             }
      
-    
-            window.place = currentId
+            const element = document.getElementById('seats')
+            function placeShow(){
+                window.place = currentId
+                element.innerText = window.place.join(', ')
+            }
+            placeShow()
         })
     });
         

@@ -164,6 +164,7 @@ export const datePickerFrom = () => {
     // =================
     selected_date_element.addEventListener('click', ()=>{
         window.dateFrom = selected_date_element.textContent;
+        document.getElementById('dateFrom').innerHTML = window.dateTo;
     })
   // End ==== 4 ====
     // ^^^^^^^^^^^^^^^

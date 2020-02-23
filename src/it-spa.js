@@ -2,27 +2,27 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './main.scss';
 import $ from 'jquery';
 import { Router } from './router/router';
-//HTML and SCSS aplications
-import { asideBar } from './aside/aside';
-import { flightsTo } from './flights/flightsTo';
-import { flightsFrom } from './flights/flightsFrom';
+//Pages "html&css"
+import { asideBar } from './loadingPages/aside/aside';
+import { flightsTo } from './loadingPages/flights/flightsTo';
+import { flightsFrom } from './loadingPages/flights/flightsFrom';
+ import {baggage } from './loadingPages/baggage/baggage'
+ import { airplaneSmall } from './loadingPages/airplanes/airplaneSmall'
+ import { airplaneLarge } from './loadingPages/airplanes/airplaneLarge'
+ import {  summaryAll } from './loadingPages/summary/summary'
 
- import {baggage } from './baggage/baggage'
-
- import { airplaneSmall } from './airplanes/airplaneSmall'
- import { airplaneLarge } from './airplanes/airplaneLarge'
-
- import {  summaryAll } from './summary/summary'
+ // JS aplications "functions"
  import {sum} from './summary/sum/sum'
-// JS aplications
  import {buttonShow} from './common/buttonShow'
  import {buttonSelector} from './common/buttonSelector'
  import {seatSelector} from './common/seatSelector'
-
- import {datePickerView } from './dateAndDistanceView/datePicker'
  import {datePickerTo } from './datePickers/datePickerTo'
  import {datePickerFrom } from './datePickers/datePickerFrom'
-// Trzeba zrobic w HTML diva ktory bedzie oprozniany i podmieniany na kolejne zakladki
+import {accept} from "./common/acceptButton"
+// Variables
+window.people = 0
+window.young = 0
+window.child = 0
 
 
 //Łapacze
@@ -30,36 +30,38 @@ const main = $('main');
 const div = $('div');
 // const test = $("test")
 // const test = $('#btn_one')
-const router = new Router();
-router.mount(main);
+// const router = new Router();
+// router.mount(main);
 
 
-// Trzeba ulozyc logike do przepuszca do poszczegolnych paneli
-
-// div.append(datePickerView);
-
-
-// main.before(asideBar);
+//Wgrywanie stron
+main.before(asideBar);
 div.append(flightsTo);
 div.append(flightsFrom);
+
+
+div.append(baggage);
+
+
+div.append(airplaneSmall);
+// div.append(airplaneLarge);
+div.append(summaryAll)
+
+
+// Funkcje
 datePickerTo();
 datePickerFrom();
 buttonShow();
-
-// div.append(baggage);
 buttonSelector();
+seatSelector();
+sum();
 
-// div.append(airplaneSmall);
-// seatSelector();
 
-
-// buttonSelector();
-// div.append(summaryAll)
-// sum();
-// const checker = document.getElementById("sum");
+// CHECKER
+// const checker = document.getElementById("buy");
 // console.log(checker )
-// sum.addEventListener("click", () => {
-//     sum.innerHTML = place
+// checker.addEventListener("click", () => {
+//     sum.innerHTML = window.place
 //     console.log(place)
 // })
 

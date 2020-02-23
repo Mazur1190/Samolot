@@ -1,9 +1,9 @@
 import $ from 'jquery';
-import image from '../image/images/plane_large.jpg'
+import image from '../../image/images/plane_large.jpg'
 
 export const airplaneLarge = () => {
     const airplane = $(`
-    <div class="column">
+    <div class="column id="airplaneLarge">
     <div class="col-12 d-flex justify-content-center zero">
         <div class="airplanes">
             <div class="col-12 d-flex justify-content-center airplane">
@@ -190,6 +190,9 @@ export const airplaneLarge = () => {
             </div>
         </div>
     </div>
+</div>
+<div class="btn-accept btn-six">
+<button id="btn_six" class="btn btn-primary">Akceptuj</button>
 </div>
         `);
         fetch('http://localhost:3000/airplaneLarge') // Pobiera baze danych tylko Array zwiazany z "seats"

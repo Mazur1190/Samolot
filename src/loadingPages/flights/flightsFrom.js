@@ -1,12 +1,12 @@
 import $ from 'jquery';
-import image from '../image/images/icons/black-plane.svg'
-import imagex from '../image/images/icons/bottom-ticket/minus-symbol.svg'
-import imagey from '../image/images/icons/bottom-ticket/airliner.svg'
-import imagez from '../image/images/icons/bottom-ticket/right-arrow.svg'
+import image from '../../image/images/icons/black-plane.svg'
+import imagex from '../../image/images/icons/bottom-ticket/minus-symbol.svg'
+import imagey from '../../image/images/icons/bottom-ticket/airliner.svg'
+import imagez from '../../image/images/icons/bottom-ticket/right-arrow.svg'
 
 export const flightsFrom = () => {
     const flightsView = $(`
-    <div class="column">
+    <div class="column" id="flight_from">
                   <div class="col-12 d-flex justify-content-center zero">
                       <div class="flight">
                           <div class="col-12 d-flex justify-content-center flight-selector-from">
@@ -114,7 +114,14 @@ export const flightsFrom = () => {
                                                       <h2>25 $</h2>
                                                   </div>
                                               </div>
-                                      </div>
+                                    </div>
+                                      
+                                    <div class="col-12 flight-selector_bottom" id="acceptTickets">
+                                        <div class="">
+                                            <button id="btn_three" class="btn btn-primary">Akceptuj</button>
+                                        </div>
+                                    </div>
+
                                   </div>
                               </div>
                           </div>

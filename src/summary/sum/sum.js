@@ -7,12 +7,28 @@ export const sum = () => {
     const seats_element = document.getElementById('seats')
     const sum_element = document.getElementById('summary')
 
-    console.log(sum)
 
+
+
+
+    // (( parseInt(window.people) * parseInt(window.baggagePrice) ) + (( parseInt(window.people) *(( parseInt(window.ticketToPrice)  + parseInt(window.ticketFromPrice)  )) + "$"
+
+      // (parseInt(window.ticketToPrice)+ parseInt(window.ticketFromPrice))
+
+
+    // (parseInt(window.people)
+    // parseInt(window.child)
+    // parseInt(window.young)
+    // parseInt(window.baggagePrice)
+
+    
     let sum = () =>{
-        let sum = window.ticketToPrice*(window.people*1 + window.young*0.5 + window.child*0.75) + window.baggagePrice + "$"
-        
-        sum_element.innerHTML = sum
+        let sumPeople =  (parseInt(window.people) * parseInt(window.baggagePrice))+ (parseInt(window.people)* (parseInt(window.ticketToPrice)  + parseInt(window.ticketFromPrice))) 
+        let sumYoung =  (parseInt(window.young) * parseInt(window.baggagePrice))+ (parseInt(window.young)* (parseInt(window.ticketToPrice)  + parseInt(window.ticketFromPrice)))
+        let sumChild =  (parseInt(window.child) * parseInt(window.baggagePrice))+ (parseInt(window.child)* (parseInt(window.ticketToPrice)  + parseInt(window.ticketFromPrice)))
+
+
+        sum_element.innerHTML = sumPeople + sumYoung*0.5 + sumChild*0.4 + "$"
 
     }
     sum()

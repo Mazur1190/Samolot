@@ -2,7 +2,7 @@ import $ from 'jquery';
 
 export const summaryAll = () => {
     const summary = $(`
-    <div class="column">
+    <div class="column" id="summaryView">
     <div class="col-12 summary">
         <div class=" d-flex justify-content-center summary_box">
             <div class="row">
@@ -16,35 +16,59 @@ export const summaryAll = () => {
                 <div class="col-12 summary_box-one">
                     <div class="col-3 d-flex">
                         <div class="col-4 d-flex">
-                            <h2>Loty:</h2>
+                            <h2>Cel:</h2>
                         </div>
                     </div>
                     <div class="col-4 d-flex summary_box-one-box">
                         <div class="col-4 d-flex">
-                            <h2>Start</h2>
+                            <h2 id="targetStartTo">Start</h2>
                         </div>
                         <div class="col-4 d-flex">
                             <img src="https://image.flaticon.com/icons/svg/109/109617.svg" width="224" height="224" alt="Right Arrow free icon" title="Right Arrow free icon">
                         </div>
                         <div class="col-4 d-flex">
-                            <h2>Stop</h2>
+                            <h2 id="targetStopTo">Stop</h2>
                         </div>
                     </div>
                     <div class="col-4 d-flex summary_box-one-box">
                         <div class="col-4 d-flex">
-                            <h2>Start</h2>
+                            <h2 id="targetStartFrom">Start</h2>
                         </div>
                         <div class="col-4 d-flex">
                             <img src="https://image.flaticon.com/icons/svg/109/109617.svg" width="224" height="224" alt="Right Arrow free icon" title="Right Arrow free icon">
                         </div>
                         <div class="col-4 d-flex">
-                            <h2>Stop</h2>
+                            <h2 id="targetStopTo">Stop</h2>
                         </div>
                     </div>
                 </div>
                 
             </div>
         </div>
+        <div class="d-flex justify-content-center summary_box">
+        <div class="row">
+            <div class="col-12 summary_box-one-half">
+                <div class="col-3 d-flex">
+                    <div class="col-4 d-flex">
+                        <h2>Daty:</h2>
+                    </div>
+                </div>
+                <div class="col-8 d-flex summary_box-one-box">
+                    <div class="col-4 d-flex">
+                        <h2 id="dateTo">Start</h2>
+                    </div>
+                    <div class="col-4 d-flex">
+                        <img src="https://image.flaticon.com/icons/svg/109/109617.svg" width="224" height="224" alt="Right Arrow free icon" title="Right Arrow free icon">
+                    </div>
+                    <div class="col-4 d-flex">
+                        <h2 id="dateFrom">Stop</h2>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
         <div class=" d-flex justify-content-center summary_box">
             <div class="row">
                 <div class="col-12 summary_box-two">
@@ -53,13 +77,13 @@ export const summaryAll = () => {
                             <h2>Pasażerowie:</h2>
                         </div>
                         <div class="col-4 d-flex">
-                            <h2 id="passengers">4</h2>
+                            <h2 id="passengers"></h2>
                         </div>
                         <div class="col-4 d-flex">
                             <h2>Bagaż:</h2>
                         </div>
                         <div class="col-4 d-flex">
-                            <h2 id="baggage">32 kg</h2>
+                            <h2 id="baggage"></h2>
                         </div>
                     </div>
                 </div>
@@ -73,16 +97,8 @@ export const summaryAll = () => {
                         <div class="col-4 d-flex">
                             <h2>Miejsca:</h2>
                         </div>
-                        <div class="col-4 d-flex" id="seats">
-                            <span>A30</span>
-                            <span>A30</span>
-                            <span>A30</span>
-                            <span>A30</span>
-                            <span>A30</span>
-                            <span>A30</span>
-                            <span>A30</span>
-                            <span>A30</span>
-                            <span>A30</span>
+                        <div class="col-4 d-flex justify-content-end" >
+                            <span id="seats"></span>
                         </div>
                      
                     </div>
@@ -110,7 +126,7 @@ export const summaryAll = () => {
             <div class="row">
                 <div class="col-12 summary_box-five d-flex justify-content-center">
                         <div class=" baggage_box-bot-button">
-                            <button class="btn btn-primary">Kupuję</button>
+                            <button class="btn btn-primary" id="buy">Kupuję</button>
                         </div>
                     </div>
                 </div>
