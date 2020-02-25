@@ -1,12 +1,14 @@
 
 export const accept = () => {
     //Buttons
+    const btn_zero = document.getElementById('btn_zero')
     const btn_three = document.getElementById('btn_three')
     const btn_four = document.getElementById('btn_four')
     const btn_five = document.getElementById('btn_five')
     const btn_six = document.getElementById('btn_six')
     const btn_seven = document.getElementById('btn-seven')
     //Views
+    const flightDirection = document.getElementById('flightDirection')
     const flightTo = document.getElementById('flight_to')
     const flightFrom = document.getElementById('flight_from')
     const baggage = document.getElementById('baggageView')
@@ -15,6 +17,14 @@ export const accept = () => {
     const airplaneSmall = document.getElementById('airplaneSmall')
     const airplaneLarge = document.getElementById(' airplaneLarge')
     const summary = document.getElementById('summaryView')
+    console.log(btn_zero)
+    console.log(flightDirection)
+    btn_zero.addEventListener('click', ()=>{
+ 
+        flightDirection.style.display="none"
+        flightTo.style.display="flex"
+        flightFrom.style.display="flex"
+    })
 
     btn_three.addEventListener('click', ()=>{
 

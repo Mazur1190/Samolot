@@ -1,0 +1,58 @@
+.destination{
+    margin-top: 5%;
+.destination_box{
+    
+    .destination_box-top,.destination_box-middle{
+        background-color: white;
+        display: flex;
+        align-items: center;
+        width: 995px;
+        padding-left: 5%;
+        margin-bottom:0;
+    }
+    .destination_box-top{
+        height: 100px;
+        display: flex;
+        justify-content: space-evenly;
+        background-color:$flight-primary;
+        h2{
+            text-transform: uppercase;
+        }
+    }
+    .destination_box-middle{
+        height: 100px;
+        padding: 15px;
+        border-bottom: $flight-border;
+        .destination_box-middle-box{
+            align-items: center;
+            
+         div{
+             align-items: center;
+         }
+        }
+        .form-control{
+            width: 50%;
+            height: 100%;
+            margin-left: 20px;
+        }
+                select{
+                    text-align-last: center;
+                    padding-right: 29px;
+                    font-size: 20px;
+                }
+        h2{
+            font-size: 25px;
+            margin-left: 20px;
+            margin-bottom: 0;
+            
+        }
+    
+    }
+    
+}
+            img{
+            position: relative;
+            max-width: 995px;
+            height: 600px;
+            }
+}

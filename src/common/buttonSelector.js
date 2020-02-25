@@ -123,4 +123,29 @@ for (let i = 0; i < btnsBaggage.length; i++) {
 
   }
   peopleQuantity()
+
+
+//---------------------------
+// Flight Direction
+//---------------------------
+const  destination = () =>{
+  const destinationTo = document.getElementById("directionTo")
+  const destinationFrom = document.getElementById("directionFrom")
+  destinationTo.addEventListener("change",  ()=>{
+    const selectedDirectionTo = document.document.getElementById("directionTo").value
+    window.directionTo = selectedDirectionTo
+    
+    
+    sum()
+  })
+  destinationFrom.addEventListener("change", ()=>{
+    const selectedDirectionFrom = document.document.getElementById("directionFrom").value
+    window.directionFrom = selectedDirectionFrom
+    sum()
+  })
+ 
+
+
+}
+destination()
 }

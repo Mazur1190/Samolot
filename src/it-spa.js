@@ -4,6 +4,7 @@ import $ from 'jquery';
 import { Router } from './router/router';
 //Pages "html&css"
 import { asideBar } from './loadingPages/aside/aside';
+import {flightsDirection} from './loadingPages/flightDirection/flightDirection';
 import { flightsTo } from './loadingPages/flights/flightsTo';
 import { flightsFrom } from './loadingPages/flights/flightsFrom';
  import {baggage } from './loadingPages/baggage/baggage'
@@ -36,6 +37,7 @@ const div = $('div');
 
 //Wgrywanie stron
 // main.before(asideBar);
+div.append(flightsDirection);
 div.append(flightsTo);
 div.append(flightsFrom);
 
@@ -55,6 +57,7 @@ buttonShow();
 buttonSelector();
 seatSelector();
 sum();
+accept();
 
 
 // CHECKER
