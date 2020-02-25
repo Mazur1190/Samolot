@@ -38,7 +38,7 @@ export const summaryAll = () => {
                             <img src="https://image.flaticon.com/icons/svg/109/109617.svg" width="224" height="224" alt="Right Arrow free icon" title="Right Arrow free icon">
                         </div>
                         <div class="col-4 d-flex">
-                            <h2 id="targetStopTo">Stop</h2>
+                            <h2 id="targetStopFrom">Stop</h2>
                         </div>
                     </div>
                 </div>

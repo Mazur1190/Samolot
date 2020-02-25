@@ -1,5 +1,5 @@
 #summaryView{
-    display:none;
+    // display:none;
 }
 .summary{
         margin-top: 10%;
@@ -24,18 +24,15 @@
         }
         .summary_box-one,.summary_box-one-half,.summary_box-two,.summary_box-three,.summary_box-four{
             height: 100px;
-            padding: 15px;
+            padding: 10px;
             border-bottom: $flight-border;
             .summary_box-middle-box{
                 align-items: center;
-                
-             
             }
             h2{
                 margin-bottom: 0;
-                
             }
-        
+    
         }
         .summary_box-four,.summary_box-five{
             border-bottom: none;
@@ -44,17 +41,21 @@
         .summary_box-one{
             border: none;
             
-        
+            
             .summary_box-one-box{
                 box-shadow: 0 0 25px rgba(0,0,0,.2);
                 margin-right: 50px;
                 height: 60px;
                 div{
+                    width: 100%;
                     display: flex;
                     justify-content: center;
-                    padding: 0;
+                    padding: 5px;
                     margin:0;
                     align-items: center;
+                }
+                h2{
+                    font-size: 22px;
                 }
                 img{
                     height: 50px;

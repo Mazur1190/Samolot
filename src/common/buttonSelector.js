@@ -132,16 +132,22 @@ const  destination = () =>{
   const destinationTo = document.getElementById("directionTo")
   const destinationFrom = document.getElementById("directionFrom")
   destinationTo.addEventListener("change",  ()=>{
-    const selectedDirectionTo = document.document.getElementById("directionTo").value
-    window.directionTo = selectedDirectionTo
+    const selectedDirectionTo = document.getElementById("directionTo").value
+    function writeValue (){
+     document.getElementById('targetStartTo').innerHTML = selectedDirectionTo 
+     document.getElementById('targetStopFrom').innerHTML = selectedDirectionTo 
+    }
+    writeValue()
     
     
-    sum()
   })
   destinationFrom.addEventListener("change", ()=>{
-    const selectedDirectionFrom = document.document.getElementById("directionFrom").value
-    window.directionFrom = selectedDirectionFrom
-    sum()
+    const selectedDirectionTo = document.getElementById("directionFrom").value
+    function writeValue (){
+     document.getElementById('targetStopTo').innerHTML = selectedDirectionTo 
+     document.getElementById('targetStartFrom').innerHTML = selectedDirectionTo 
+    }
+    writeValue()
   })
  
 
