@@ -38,17 +38,40 @@ export const accept = () => {
         flightTo.style.display="none"
         flightFrom.style.display="none"
         baggage.style.display="flex"
+
+        let btnsTo = document.getElementsByClassName("flight-selector_ticket-class-acceptTo")
+        let btnsFrom = document.getElementsByClassName("flight-selector_ticket-class-acceptTo")
+
+        function check (x,y){
+            for(let i = 0; i < btnsTo.length; i++){
+                let x = btnsTo[i].getAttribute('value')
+                return x
+            }
+            for(let i = 0; i < btnsFrom.length; i++){
+                let y = btnsFrom[i].getAttribute('value')
+                return y
+            }
+            
+            console.log(check(x,y))
+        }
+        check(btnsTo,btnsFrom)
+        // if(y === "" || x === ""){
+        //     console.log("elo")
+        // }
+        // else{
+        //     console.log("elo2")
+        // }
     })
 
     btn_four.addEventListener('click', ()=>{
         baggage.style.display="none"
         airplaneSmall.style.display="flex"
         btnFive.style.display="flex"
-        /*
-        if(tutaj selektor lotow jezeli rowna sie long to wyswielt duzy samolot){
+     
+        // if(){
            
-        }
-        */
+        // }
+        
     })
 
     btn_five.addEventListener('click', ()=>{
