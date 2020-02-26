@@ -1,6 +1,7 @@
 import $ from 'jquery';
-
+import {directionChecker} from './/flightDirectionLogics/flightDirectionLogics'
 import image from '../../image/images/maldives-ocean-wallpaper-1280x720.jpg'
+
 
 
 export const flightsDirection = () => {
@@ -25,23 +26,23 @@ export const flightsDirection = () => {
                         <div class="col-6 d-flex justify-content-center">
                             <h2>Miejsce wylotu:</h2>
                             <select class="form-control" id="directionTo">
-                                 <option > </option>
-                                <option >Wroław</option>
-                                <option >Berlin</option>
-                                <option >Amsterdam</option>
+                                 <option></option>
+                                <option value="Wrocław">Wrocław</option>
+                                <option value="Berlin">Berlin</option>
+                                <option value="Amsterdam">Amsterdam</option>
                             </select>
                         </div>
                         <div  class="col-6 d-flex justify-content-center">
                             <h2>Cel podróży:</h2>
                             <select class="form-control" id="directionFrom">
-                                <option > </option>
-                                <option data-distance="short">Warszawa</option>
+                                
+                              <!--  <option data-distance="short">Warszawa</option>
                                 <option data-distance="short">Berlin</option>
                                 <option data-distance="medium">Paryż</option>
                                 <option data-distance="medium">Moskwa</option>
                                 <option data-distance="long">Hong Kong</option>
                                 <option data-distance="long">New York</option>
-                            
+                            -->
                             </select>
                         </div>
                         
@@ -60,6 +61,5 @@ export const flightsDirection = () => {
     </div>
 </div>
     `)
-
     return flightsDirection;
 }

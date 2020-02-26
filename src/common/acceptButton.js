@@ -17,13 +17,20 @@ export const accept = () => {
     const airplaneSmall = document.getElementById('airplaneSmall')
     const airplaneLarge = document.getElementById(' airplaneLarge')
     const summary = document.getElementById('summaryView')
-    console.log(btn_zero)
-    console.log(flightDirection)
+
+    
+        
     btn_zero.addEventListener('click', ()=>{
- 
-        flightDirection.style.display="none"
-        flightTo.style.display="flex"
-        flightFrom.style.display="flex"
+        const directionTo = document.getElementById('directionTo')
+        const directionFrom = document.getElementById('directionFrom')
+        if(directionTo.value === '' || directionFrom.value === ''){
+            alert("Proszę dokonać wyboru")
+        }else{
+
+            flightDirection.style.display="none"
+            flightTo.style.display="flex"
+            flightFrom.style.display="flex"
+        }
     })
 
     btn_three.addEventListener('click', ()=>{

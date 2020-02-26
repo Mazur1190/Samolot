@@ -20,6 +20,8 @@ import { flightsFrom } from './loadingPages/flights/flightsFrom';
  import {datePickerTo } from './datePickers/datePickerTo'
  import {datePickerFrom } from './datePickers/datePickerFrom'
 import {accept} from "./common/acceptButton"
+// JS applications logics for pages
+import {directionChecker} from './loadingPages/flightDirection/flightDirectionLogics/flightDirectionLogics'
 // Variables
 window.people = 0
 window.young = 0
@@ -50,7 +52,7 @@ div.append(airplaneSmall);
 div.append(summaryAll)
 
 
-// Funkcje
+// Funkcje ogólne
 datePickerTo();
 datePickerFrom();
 buttonShow();
@@ -59,6 +61,8 @@ seatSelector();
 sum();
 accept();
 
+//Funkcje sprawdzajace
+directionChecker();
 
 // CHECKER
 // const checker = document.getElementById("buy");
