@@ -90,7 +90,8 @@ export const datePickerTo = () => {
     next_mth_element.addEventListener('click', goToNextMonth)
     prev_mth_element.addEventListener('click', goToPrevMonth)
     
-    function goToNextMonth (e) {
+    function goToNextMonth () {
+        
         month++;
         if(month >11) {
             month = 0;
@@ -100,7 +101,7 @@ export const datePickerTo = () => {
         populatesDates();
     }
     
-    function goToPrevMonth (e) {
+    function goToPrevMonth () {
         month--;
         if(month <0) {
             month = 11;
@@ -121,7 +122,7 @@ export const datePickerTo = () => {
         let amount_days = 31;
         if (month%2 == 0){   // jezeli miesiac 1 czyli luty to ma 28 dni
             amount_days=30;
-        }else if (month = 1){
+        }else if (month === 1){
             amount_days=29;
         }
         for (let i =0; i<amount_days; i++){
@@ -142,21 +143,12 @@ export const datePickerTo = () => {
             
             day_element.addEventListener('click', function (){
                 var d = new Date();
-                // var node = document.getElementById('datesTo')
-                var node = document.querySelectorAll('#daysTo div')
-                var nodeTwo = document.querySelectorAll('#daysTo div.selected')
-      
-                
-                // var x = nodeTwo.innerText
-                console.log(this.value)
-                console.log(nodeTwo)
-                // console.log(x)
-                // if(d.getDate()<(d.getDate())-1){
-                //     console.log("works")
-                // }else{
-                //     console.log("lol")
-                // }
-            
+                var n = d.getDay() +1
+                // var nodeTwo = document.querySelectorAll('#daysTo div.selected')
+                var x = parseInt(this.innerText)
+                console.log(n)
+                console.log(x)
+                if (n <= x) {
                     selectDate = new Date(year + '-' + (month +1) + '-' + (i+1));
                     selectDay = (i +1);
                     selectMonth = month;
@@ -164,6 +156,10 @@ export const datePickerTo = () => {
                     selected_date_element.textContent = formatDate(selectDate);
                     selected_date_element.dataset.value = selectDate;
                     populatesDates();
+                }else if (n>x){
+                    console.log("do tyłu")
+                }
+              
                 })
                
             
