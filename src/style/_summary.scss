@@ -6,11 +6,19 @@
         margin-bottom: 10%;
     .summary_box{
         
+        & * {
+
+            @media (max-width: 991px) {
+                width: 100%;
+            }
+        }
         .summary_box-top,.summary_box-one,.summary_box-one-half,.summary_box-two,.summary_box-three,.summary_box-four,.summary_box-five{
             background-color: white;
             display: flex;
             align-items: center;
-            width: 995px;
+            @media (min-width: 992px) {
+                width: 995px;
+            }
             padding-left: 5%;
             margin-bottom:0;
         }

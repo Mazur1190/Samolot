@@ -19,7 +19,7 @@ export const summaryAll = () => {
                             <h2>Cel:</h2>
                         </div>
                     </div>
-                    <div class="col-4 d-flex summary_box-one-box">
+                    <div class="col-12 col-md-4 d-flex summary_box-one-box">
                         <div class="col-4 d-flex">
                             <h2 id="targetStartTo">Start</h2>
                         </div>
@@ -30,7 +30,7 @@ export const summaryAll = () => {
                             <h2 id="targetStopTo">Stop</h2>
                         </div>
                     </div>
-                    <div class="col-4 d-flex summary_box-one-box">
+                    <div class="col-12 col-md-4 d-flex summary_box-one-box">
                         <div class="col-4 d-flex">
                             <h2 id="targetStartFrom">Start</h2>
                         </div>

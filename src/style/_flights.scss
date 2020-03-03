@@ -7,8 +7,10 @@ display:none;
 .flight{
  
     .flight_cards{
-        width: 996px;
         box-shadow: 0 0 25px rgba(0,0,0,.5);
+        @media (min-width: 992px) {
+            width: 996px;
+        }
     }
     .flight-selector-from{
         margin-bottom: 50px;

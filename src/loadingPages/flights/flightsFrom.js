@@ -16,7 +16,7 @@ export const flightsFrom = () => {
                                           <div class="flight-selector_top-icon">
                                               <img class="flight-selector_top-icon-from" src="${image}" alt="">
                                           </div>
-                                          <div class="col-6 d-flex justify-content-center flight-selector_top-header">
+                                          <div class="col-12 col-md-6 d-flex justify-content-center flight-selector_top-header">
                                               <h1>Berlin</h1>
                                               <img src="https://image.flaticon.com/icons/svg/109/109617.svg" width="224" height="224" alt="Left Arrow free icon" title="Left Arrow free icon">
                                               <h1>Wrocław</h1>

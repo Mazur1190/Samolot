@@ -16,6 +16,9 @@ export const datePickerTo = () => {
     const months = ['Styczeń', 'Luty','Marzec', 'Kwiecień', 'Maj', 'Czerwiec', 'Lipiec', 'Sierpień', 'Wrzesień', 'Październik', 'Listopad', 'Grudzień'];
     
     
+
+    
+
     // Date pickers
     let date = new Date();
     let day = date.getDate();
@@ -27,6 +30,7 @@ export const datePickerTo = () => {
     let selectMonth = month;
     let selectYear = year;
     
+ 
     
     mth_element.textContent = months[month] + ' ' + year;
     selected_date_element.dataset.value = selectDate;
@@ -124,21 +128,46 @@ export const datePickerTo = () => {
             const day_element = document.createElement('div');
             day_element.classList.add('day');
             day_element.textContent = i +1;
+            day_element.setAttribute('value', i +1)
     
-            // Wybór dnia
-            day_element.addEventListener('click', function (){
-                selectDate = new Date(year + '-' + (month +1) + '-' + (i+1));
-                selectDay = (i +1);
-                selectMonth = month;
-                selectYear = year;
-                selected_date_element.textContent = formatDate(selectDate);
-                selected_date_element.dataset.value = selectDate;
-                populatesDates();
-            })
+            
             // Zaznaczenie dnia dzisiejszego
             if (selectDay == (i+1) && selectYear == year && selectMonth == month){
                 day_element.classList.add('selected');
+              
+                
             }
+            // Wybór dnia
+         
+            
+            day_element.addEventListener('click', function (){
+                var d = new Date();
+                // var node = document.getElementById('datesTo')
+                var node = document.querySelectorAll('#daysTo div')
+                var nodeTwo = document.querySelectorAll('#daysTo div.selected')
+      
+                
+                // var x = nodeTwo.innerText
+                console.log(this.value)
+                console.log(nodeTwo)
+                // console.log(x)
+                // if(d.getDate()<(d.getDate())-1){
+                //     console.log("works")
+                // }else{
+                //     console.log("lol")
+                // }
+            
+                    selectDate = new Date(year + '-' + (month +1) + '-' + (i+1));
+                    selectDay = (i +1);
+                    selectMonth = month;
+                    selectYear = year;
+                    selected_date_element.textContent = formatDate(selectDate);
+                    selected_date_element.dataset.value = selectDate;
+                    populatesDates();
+                })
+               
+            
+            
     
             days_element.appendChild(day_element)
         }

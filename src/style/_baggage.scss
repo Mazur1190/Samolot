@@ -10,7 +10,9 @@
             background-color: white;
             display: flex;
             align-items: center;
-            width: 995px;
+            @media (min-width: 992px) {
+                width: 995px;
+            }
             padding-left: 5%;
             margin-bottom:0;
         }

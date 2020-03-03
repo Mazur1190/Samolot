@@ -1,12 +1,19 @@
 .destination{
     margin-top: 5%;
 .destination_box{
+ > .row{
+     @media (max-width: 991px) {
+         width: 100%;
+        }
+    }
     
     .destination_box-top,.destination_box-middle{
         background-color: white;
         display: flex;
         align-items: center;
-        width: 995px;
+        @media (min-width: 992px) {
+            width: 995px !important;
+        }
         padding-left: 5%;
         margin-bottom:0;
     }
@@ -20,9 +27,11 @@
         }
     }
     .destination_box-middle{
-        height: 100px;
         padding: 15px;
         border-bottom: $flight-border;
+        @media (min-width: 992px) {
+            height: 100px;
+        }
         .destination_box-middle-box{
             align-items: center;
             
@@ -52,7 +61,9 @@
 }
             img{
             position: relative;
-            max-width: 995px;
-            height: 600px;
+            @media (min-width: 992px) {
+                max-width: 995px;
+                height: 600px;
             }
+        }
 }

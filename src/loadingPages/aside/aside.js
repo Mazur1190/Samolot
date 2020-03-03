@@ -4,7 +4,10 @@ import image from '../../image/images/logo/e76427fc-9a66-4e2c-8d8b-3fa9498b9161_
 export const asideBar = () => {
     const aside = $(`
     <div>
-    <aside>
+    <aside id="menu" class="navbar-light">
+    <button id="menu-button" class="navbar-toggler" type="button">
+        <span class="navbar-toggler-icon"></span>
+    </button>
             <div class="adise_logo">
                 <div class="logo"><img src="${image}"></div>
             </div>
@@ -14,15 +17,15 @@ export const asideBar = () => {
                     <div class="card-header" id="headingOne">
                         <h2 class="mb-0">
                         <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Loty
+                            Bilety
                         </button>
                         </h2>
                     </div>
                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                         <div class="card-body">
-                        <h3>Wybór biletów</h3>
+                        <h3>Koszt biletów na osobę</h3>
                             <div class="card-body-indicator">
-                                <h2 class="mb-0">
+                                <h2 class="mb-0" id="ticketsAside">
                                     0.00$
                                 </h2>
                             </div>
@@ -41,7 +44,7 @@ export const asideBar = () => {
                         <div class="card-body">
                         <h3>Ilość biletów</h3>
                             <div class="card-body-indicator">
-                                <h2 class="mb-0">
+                                <h2 class="mb-0" id="ticketsAside">
                                     0
                                 </h2>
                             </div>
@@ -52,15 +55,15 @@ export const asideBar = () => {
                     <div class="card-header" id="headingThree">
                         <h2 class="mb-0">
                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Miejsca
+                            Dodatkowy Bagaż
                         </button>
                         </h2>
                     </div>
                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                         <div class="card-body">
-                        <h3>Wybór miejsca</h3>
+                        <h3>Koszt</h3>
                             <div class="card-body-indicator">
-                                <h2 class="mb-0">
+                                <h2 class="mb-0" id="baggageAside">
                                     0
                                 </h2>
                             </div>
@@ -79,7 +82,7 @@ export const asideBar = () => {
                         <div class="card-body">
                             <h3>Do zapłaty</h3>
                             <div class="card-body-indicator">
-                                <h2 class="mb-0">
+                                <h2 class="mb-0" id="sumAside">
                                     0.00$
                                 </h2>
                             </div>

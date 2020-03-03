@@ -52,7 +52,6 @@ for (let i = 0; i < btnsFrom.length; i++) {
 
       if (this.classList.contains("flight-selector_ticket-class-acceptFrom")) {
         acceptTickets.style.display="flex"
-        accept()
       }
     });
   }
@@ -71,6 +70,7 @@ for (let i = 0; i < btnsBaggage.length; i++) {
     let currentValueBaggage = this.getAttribute("value");  // Pobiera wartosc biletu
     window.baggagePrice = currentValueBaggage
     document.getElementById('baggage').innerHTML = window.baggagePrice + "kg"
+    document.getElementById('baggageAside').innerHTML = currentValueBaggage + "$"
     sum()
 
     // If there's no active class
@@ -119,6 +119,7 @@ for (let i = 0; i < btnsBaggage.length; i++) {
     function passengerSum (){
       let sum =  parseInt(window.people) + parseInt(window.young) +parseInt(window.child)
       document.getElementById('passengers').innerHTML = sum
+      document.getElementById('ticketsAside').innerHTML = sum
     }
 
   }

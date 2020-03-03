@@ -3,7 +3,7 @@ import image from '../../image/images/plane_large.jpg'
 
 export const airplaneLarge = () => {
     const airplane = $(`
-    <div class="column id="airplaneLarge">
+    <div class="column" id="airplaneLarge">
     <div class="col-12 d-flex justify-content-center zero">
         <div class="airplanes">
             <div class="col-12 d-flex justify-content-center airplane">

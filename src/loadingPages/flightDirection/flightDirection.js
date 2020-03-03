@@ -10,7 +10,7 @@ export const flightsDirection = () => {
     <div class="col-12 destination">
         <div class="col-12 d-flex justify-content-center destination_box">
             <div class="row">
-                <div class="d-flex destination_box-top">
+                <div class="d-flex destination_box-top w-100">
                     <h2>Cel podróży</h2>
                     <div class="btn-accept btn-zero">
                         <button id="btn_zero" class="btn btn-primary">Lecimy!</button>
@@ -22,26 +22,26 @@ export const flightsDirection = () => {
         <div class="col-12 d-flex justify-content-center destination_box">
             <div class="row">
                 <div class="col-12 destination_box-middle">
-                    <div class="col-12 d-flex destination_box-middle-box">
-                        <div class="col-6 d-flex justify-content-center">
+                    <div class="col-12 row destination_box-middle-box">
+                        <div class="col-12 col-md-6 d-flex justify-content-center">
                             <h2>Miejsce wylotu:</h2>
                             <select class="form-control" id="directionTo">
                                  <option></option>
-                                <option value="Wrocław">Wrocław</option>
-                                <option value="Berlin">Berlin</option>
-                                <option value="Amsterdam">Amsterdam</option>
+                                <option data-distance="short" value="Wrocław">Wrocław</option>
+                                <option data-distance="medium" value="Berlin">Berlin</option>
+                                <option data-distance="long" value="Amsterdam">Amsterdam</option>
                             </select>
                         </div>
-                        <div  class="col-6 d-flex justify-content-center">
+                        <div  class="col-12 col-md-6 d-flex justify-content-center">
                             <h2>Cel podróży:</h2>
                             <select class="form-control" id="directionFrom">
                                 
                               <!--  <option data-distance="short">Warszawa</option>
-                                <option data-distance="short">Berlin</option>
-                                <option data-distance="medium">Paryż</option>
-                                <option data-distance="medium">Moskwa</option>
-                                <option data-distance="long">Hong Kong</option>
-                                <option data-distance="long">New York</option>
+                                <option >Berlin</option>
+                                <option >Paryż</option>
+                                <option >Moskwa</option>
+                                <option >Hong Kong</option>
+                                <option >New York</option>
                             -->
                             </select>
                         </div>
@@ -54,7 +54,7 @@ export const flightsDirection = () => {
         <div class="col-12 d-flex justify-content-center destination_box-film">
             <div class="row">
                 <div class="col-12">
-                    <img src="${image}" alt="">
+                    <img class="img-fluid" src="${image}" alt="">
                 </div>
             </div>
         </div>

@@ -38,7 +38,7 @@ const div = $('div');
 
 
 //Wgrywanie stron
-// main.before(asideBar);
+main.before(asideBar);
 div.append(flightsDirection);
 div.append(flightsTo);
 div.append(flightsFrom);
@@ -48,7 +48,7 @@ div.append(baggage);
 
 
 div.append(airplaneSmall);
-// div.append(airplaneLarge);
+div.append(airplaneLarge);
 div.append(summaryAll)
 
 
@@ -71,6 +71,14 @@ directionChecker();
 //     sum.innerHTML = window.place
 //     console.log(place)
 // })
+
+// ###
+const menu = document.getElementById('menu')
+const menu_btn = document.getElementById('menu-button')
+
+menu_btn.addEventListener("click", () => {
+    menu.classList.toggle('show')
+})
 
 
 
