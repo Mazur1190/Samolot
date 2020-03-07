@@ -1,7 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import './main.scss';
 import $ from 'jquery';
-import { Router } from './router/router';
 //Pages "html&css"
 import { asideBar } from './loadingPages/aside/aside';
 import {flightsDirection} from './loadingPages/flightDirection/flightDirection';
@@ -11,7 +10,6 @@ import { flightsFrom } from './loadingPages/flights/flightsFrom';
  import { airplaneSmall } from './loadingPages/airplanes/airplaneSmall'
  import { airplaneLarge } from './loadingPages/airplanes/airplaneLarge'
  import {  summaryAll } from './loadingPages/summary/summary'
-
  // JS aplications "functions"
  import {sum} from './summary/sum/sum'
  import {buttonShow} from './common/buttonShow'
@@ -21,38 +19,23 @@ import { flightsFrom } from './loadingPages/flights/flightsFrom';
  import {datePickerFrom } from './datePickers/datePickerFrom'
 import {accept} from "./common/acceptButton"
 // JS applications logics for pages
-import {directionChecker} from './loadingPages/flightDirection/flightDirectionLogics/flightDirectionLogics'
-// Variables
+// Global Variables
 window.people = 0
 window.young = 0
 window.child = 0
-
-
-//Łapacze
+//Cathers
 const main = $('main');
 const div = $('div');
-// const test = $("test")
-// const test = $('#btn_one')
-// const router = new Router();
-// router.mount(main);
-
-
-//Wgrywanie stron
+//Page Loading
 main.before(asideBar);
 div.append(flightsDirection);
 div.append(flightsTo);
 div.append(flightsFrom);
-
-
 div.append(baggage);
-
-
 div.append(airplaneSmall);
 div.append(airplaneLarge);
 div.append(summaryAll)
-
-
-// Funkcje ogólne
+// Functions
 datePickerTo();
 datePickerFrom();
 buttonShow();
@@ -60,18 +43,6 @@ buttonSelector();
 seatSelector();
 sum();
 accept();
-
-//Funkcje sprawdzajace
-directionChecker();
-
-// CHECKER
-// const checker = document.getElementById("buy");
-// console.log(checker )
-// checker.addEventListener("click", () => {
-//     sum.innerHTML = window.place
-//     console.log(place)
-// })
-
 // ###
 const menu = document.getElementById('menu')
 const menu_btn = document.getElementById('menu-button')
