@@ -44,7 +44,7 @@ export const asideBar = () => {
                         <div class="card-body">
                         <h3>Ilość biletów</h3>
                             <div class="card-body-indicator">
-                                <h2 class="mb-0" id="ticketsAside">
+                                <h2 class="mb-0" id="ticketsQuantity">
                                     0
                                 </h2>
                             </div>

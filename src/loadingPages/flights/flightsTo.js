@@ -130,12 +130,3 @@ export const flightsTo = () => {
 
     return flightsView;
 }
-
-
-
-
-
-// <div data-cos="elo"></div>
-
-
-// this.getAttribute("data-cos")  --->   elo

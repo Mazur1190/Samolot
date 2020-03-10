@@ -1,5 +1,21 @@
 {
-  "users": [],
+  "users": [
+    {
+      "login": "harry@lol.com",
+      "password": "qaz"
+  },
+  {
+      "login": "jerry@lol.com",
+      "password": "123"
+  },    {
+      "login": "bob@lol.com",
+      "password": "qaz123"
+  },
+  {
+    "login":"admin",
+    "password":"admin"
+  }
+  ],
 
   "airplaneSmall":
       [

@@ -130,6 +130,5 @@ export const flightsFrom = () => {
              
           </div>
     `)
-
     return flightsView;
 }

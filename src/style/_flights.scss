@@ -11,6 +11,13 @@ display:none;
         @media (min-width: 992px) {
             width: 996px;
         }
+        @media (max-width: 575.98px) {
+            transform: scale(0.8);
+        }
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            transform: scale(0.8);
+        }
+        
     }
     .flight-selector-from{
         margin-bottom: 50px;
@@ -30,6 +37,7 @@ display:none;
             img{
                 height: 50px;
                 width: 50px;
+  
             }
             .flight-selector_top-icon-from{
                 transform: rotate(180deg);
@@ -104,10 +112,29 @@ display:none;
                 align-items: center;
                 margin:0 30px;
                 width: 240px;
+                @media (max-width: 575.98px) {
+                    margin:0;
+                }
+                @media (min-width: 576px) and (max-width: 767.98px) {
+                    margin:0;
+                }
               img{
                   margin: 15px;
                   max-width: 50px;
                   max-height: 50px;
+                  @media (max-width: 575.98px) {
+                    transform: scale(0.5);
+                    margin:0;
+                }
+                @media (min-width: 576px) and (max-width: 767.98px) {
+                    transform: scale(0.5);
+                    margin:0 0 0 10px;
+                }
+                @media (min-width: 768px) and (max-width: 991.98px) {
+                    transform: scale(0.5);
+                    margin:0 0 0 10px;
+                }
+                
               }
               .flight-selector_bottom-icons-airplane{
                   transform: rotate(90deg);
