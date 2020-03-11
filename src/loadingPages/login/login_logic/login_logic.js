@@ -19,6 +19,7 @@ export const loginLogics = () => {
                         page.style.display="none"
                         aside.style.visibility = "visible"
                         session = true
+                        timeAutoLogout()
                     }
                 });
                 if(!session){
@@ -26,4 +27,37 @@ export const loginLogics = () => {
                 }
             });
     }
+    // Automatyczne wylogowanie
+    window.timeLogin = null
+    let session = false;
+    function timeAutoLogout() {
+        let timeSession = 30 * 1.5;
+        session = true
+        clearInterval(timeLogin);
+        if(timeSession > 30){
+            console.log('pierszy if')
+        }
+        timeLogin = setInterval(function() {
+            timeSession--;
+            if(timeSession <= 0){
+                clearInterval(timeLogin);
+                console.log('wylogowano')
+                location.reload();
+            }
+        // ewenetualny alert przed wylogowaniem
+            if(timeSession === 30){
+                console.log('alert przed wywaleniem sesji')
+            }
+        }, 1000);
+    }
+    // odświeżenie countera do wylogowania
+    document.addEventListener("click",
+        function () {
+            if(session){
+                timeAutoLogout()
+                console.log('refresh click')
+            }
+        }
+    );
+    
 }
