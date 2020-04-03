@@ -22,10 +22,7 @@ import { flightsFrom } from './loadingPages/flights/flightsFrom';
 import {accept} from "./common/acceptButton"
 
 // JS applications logics for pages
-<<<<<<< HEAD:src/flight_reservation.js
 import {directionChecker} from './loadingPages/flightDirection/flightDirectionLogics/flightDirectionLogics'
-=======
->>>>>>> bf8b259b819a9623295c81e183193153b3e458a9:src/it-spa.js
 // Global Variables
 window.people = 0
 window.young = 0
@@ -43,13 +40,9 @@ div.append(baggage);
 div.append(airplaneSmall);
 div.append(airplaneLarge);
 div.append(summaryAll)
-<<<<<<< HEAD:src/flight_reservation.js
 // // Functions
 
 loginLogics();
-=======
-// Functions
->>>>>>> bf8b259b819a9623295c81e183193153b3e458a9:src/it-spa.js
 datePickerTo();
 datePickerFrom();
 buttonShow();
@@ -57,12 +50,9 @@ buttonSelector();
 seatSelector();
 sum();
 accept();
-<<<<<<< HEAD:src/flight_reservation.js
 directionChecker();
 
 
-=======
->>>>>>> bf8b259b819a9623295c81e183193153b3e458a9:src/it-spa.js
 // ###
 const menu = document.getElementById('menu')
 const menu_btn = document.getElementById('menu-button')

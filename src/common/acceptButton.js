@@ -22,6 +22,7 @@ export const accept = () => {
         if(directionTo.value === '' || directionFrom.value === ''){
             alert("Proszę dokonać wyboru")
         }else{
+
             flightDirection.style.display="none"
             flightTo.style.display="flex"
             flightFrom.style.display="flex"
