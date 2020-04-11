@@ -34,9 +34,13 @@ export const accept = () => {
         if(parseInt(window.ticketToPrice) > 0 && parseInt(window.ticketFromPrice)> 0 ){
             if (dateCheckTo.dataset.accept === "true"){
                 if(dateCheckFrom.dataset.accept === "true"){
-                    flightTo.style.display="none"
-                    flightFrom.style.display="none"
-                    baggage.style.display="flex"
+                    if(dateCheckFrom.dataset.value <dateCheckTo.dataset.value){
+                        alert('Data powrotu nie może być wcześniejsza niż data odlotu.')
+                    }else{
+                        flightTo.style.display="none"
+                        flightFrom.style.display="none"
+                        baggage.style.display="flex"
+                    }
                 }else{
                     alert("Proszę wybrać datę powrotu")
                 }
