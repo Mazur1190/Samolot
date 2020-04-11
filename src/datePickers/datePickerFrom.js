@@ -15,22 +15,17 @@ export const datePickerFrom = () => {
     let year = date.getFullYear();
     let time = date.getTime()
     let fullDay =  new Date(year + '-' + (month+1) + '-' +(day))
-
     let selectDate = date;
     let selectDay = day;
     let selectMonth = month;
     let selectYear = year;
-
     mth_element.textContent = months[month] + ' ' + year;
     selected_date_element.dataset.value = time;
-
     //EVENTS with Functions
     // =================
     // Start ==== 0 ==== Date selector
     // =================
-
     selected_date_element.textContent = formatDate(date);
-
     function formatDate (d) {
         let day = d.getDate();
         if(day <10){
@@ -41,13 +36,10 @@ export const datePickerFrom = () => {
             month ="0" +month
         }
         let year = d.getFullYear();
-
         return day + ' / ' + month + ' / ' + year;
     }
-
     // End ==== 0 ====
     // ^^^^^^^^^^^^^^^
-
     // =================
     // Start ==== 1 ==== Calendar toggler (reveal days, years and months)
     // =================
@@ -57,7 +49,6 @@ export const datePickerFrom = () => {
             dates_element.classList.toggle('active');
         }
     }
-
     // HELPER for 1
     function checkEventPathForClass (path, selector) {
         for (let i=0; i<path.length; i++) {
@@ -74,7 +65,6 @@ export const datePickerFrom = () => {
     // =================
     next_mth_element.addEventListener('click', goToNextMonth)
     prev_mth_element.addEventListener('click', goToPrevMonth)
-
     function goToNextMonth (e) {
         month++;
         if(month >11) {
@@ -143,6 +133,4 @@ export const datePickerFrom = () => {
         document.getElementById('dateFrom').innerHTML = window.dateFrom;
     })
   // End ==== 4 ====
-    // ^^^^^^^^^^^^^^^
-
 }

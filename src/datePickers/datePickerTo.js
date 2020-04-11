@@ -122,7 +122,6 @@ export const datePickerTo = () => {
                     populatesDates();
                 }
                 selected_date_element.dataset.accept = 'true'
-                // <div class="selected-date" id="selected-dateTo" data-accept='false'></div>
             })
             days_element.appendChild(day_element)
         }

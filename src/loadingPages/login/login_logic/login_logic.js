@@ -41,13 +41,11 @@ export const loginLogics = () => {
         }
         timeLogin = setInterval(function() {
             timeSession--;
-            
             if(timeSession <= 0){
                 clearInterval(timeLogin);
                 page.style.display="block"
                 destination.style.display="none"
                 aside.style.visibility = "hidden"
-                
                 console.log('wylogowano')
                 location.reload();
             }
@@ -62,9 +60,6 @@ export const loginLogics = () => {
         function () {
             if(session){
                 timeAutoLogout()
-           
-                 
-                
                 // console.log('refresh click')
             }
         }
