@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import image from '../../image/images/plane_small.jpg'
+import image2 from '../../image/images/legenda.jpg'
 
 
 
@@ -8,9 +9,10 @@ export const airplaneSmall = () => {
     const airplane = $(`
     <div class="column" id="airplaneSmall">
         <div class="col-12 d-flex justify-content-center zero">
-            <div class="airplanes">
-                <div class="col-12 d-flex justify-content-center airplane">
-                    <img src="${image}" class="aurplane_small" alt="">
+            <div class="  airplanes">
+            <div class="col-12 d-flex justify-content-center airplane">
+            <img src="${image}" class="aurplane_small" alt="">
+            <img src="${image2}" class="legenda" alt="">
                     <svg>
                         <rect class="airplane_small-seat status-available" id="A1" x="68.865" y="314.11" width="30.156" height="31.86" />
                         <rect class="airplane_small-seat status-available" id="C1" x="100.865" y="314.11" width="30.156" height="31.86" />

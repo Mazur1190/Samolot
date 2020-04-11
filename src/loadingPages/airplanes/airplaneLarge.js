@@ -1,13 +1,18 @@
 import $ from 'jquery';
 import image from '../../image/images/plane_large.jpg'
+import image2 from '../../image/images/legenda2.jpg'
 
 export const airplaneLarge = () => {
     const airplane = $(`
     <div class="column" id="airplaneLarge">
     <div class="col-12 d-flex justify-content-center zero">
         <div class="airplanes">
+            <div class="col-12 d-flex justify-content-center">
+            
+            <img src="${image2}" class="legenda" alt="">
+            </div>
             <div class="col-12 d-flex justify-content-center airplane">
-                <img src="${image}" class="airplane-large" alt="">
+            <img src="${image}" class="airplane-large" alt="">
                 <svg viewBox="0 0 306 1182" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421">
                     <rect class="airplane_small-seat status-available" id="A1" x="97.254" y="213.16" width="13.237" height="15.055" />
                     <rect class="airplane_small-seat status-available" id="B1" x="111.654" y="213.16" width="13.626" height="15.055" />

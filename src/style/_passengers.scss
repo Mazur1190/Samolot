@@ -15,8 +15,12 @@ display: none;
 
 
 .airplanes{
-    
+    .legenda{
+        display: flex;
+        justify-self: center;
+    }    
     .airplane{
+        flex-direction:column;
         img{
             position: relative;
         }
