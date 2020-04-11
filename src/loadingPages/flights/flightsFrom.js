@@ -25,7 +25,7 @@ export const flightsFrom = () => {
                                       <div class="col-12 flight-selector_middle">
                                       <div><h2>Proszę wybrać datę wylotu</h2></div>
                                       <div class="date-picker" id="date-pickerFrom">
-                                          <div class="selected-date" id="selected-dateFrom"></div>
+                                          <div class="selected-date" id="selected-dateFrom" data-accept='false'></div>
                                           <div class="dates" id="datesFrom">
                                               <div class="month" id="monthFrom">
                                                   <div class="arrows prev-mth" id="prev-mthFrom">&lt;</div>

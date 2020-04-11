@@ -1,4 +1,6 @@
 export const accept = () => {
+    const dateCheckTo = document.getElementById('selected-dateTo')
+    const dateCheckFrom = document.getElementById('selected-dateFrom')
     //Buttons
     const btn_zero = document.getElementById('btn_zero')
     const btn_three = document.getElementById('btn_three')
@@ -29,10 +31,18 @@ export const accept = () => {
         }
     })
     btn_three.addEventListener('click', ()=>{
-        if(parseInt(window.ticketToPrice) > 0 && parseInt(window.ticketFromPrice)> 0){
-            flightTo.style.display="none"
-            flightFrom.style.display="none"
-            baggage.style.display="flex"
+        if(parseInt(window.ticketToPrice) > 0 && parseInt(window.ticketFromPrice)> 0 ){
+            if (dateCheckTo.dataset.accept === "true"){
+                if(dateCheckFrom.dataset.accept === "true"){
+                    flightTo.style.display="none"
+                    flightFrom.style.display="none"
+                    baggage.style.display="flex"
+                }else{
+                    alert("Proszę wybrać datę powrotu")
+                }
+            }else{
+                alert("Proszę wybrać datę wylotu")
+            }
         }
         else{
             alert("Proszę dokonać wyboru biletów")
@@ -75,5 +85,6 @@ export const accept = () => {
     btn_seven.addEventListener('click', ()=>{
         summary.style.display="none"
         alert("Dziękujemy za zakup podrózy, życzymy udanego wypoczynku")
+        window.location.reload(true);
     })
 }

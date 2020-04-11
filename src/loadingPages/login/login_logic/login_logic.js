@@ -33,7 +33,7 @@ export const loginLogics = () => {
     window.timeLogin = null
     let session = false;
     function timeAutoLogout() {
-        let timeSession = 500 * 1.5;
+        let timeSession = 2000 * 1.5;
         session = true
         clearInterval(timeLogin);
         if(timeSession > 30){

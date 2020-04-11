@@ -127,6 +127,7 @@ export const datePickerFrom = () => {
                     selected_date_element.dataset.value = selectDate.getTime();
                     populatesDates();
                 }
+                selected_date_element.dataset.accept = 'true'
             })
             days_element.appendChild(day_element)
         }
